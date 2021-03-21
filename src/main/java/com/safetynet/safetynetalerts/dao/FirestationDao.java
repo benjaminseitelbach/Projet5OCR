@@ -1,5 +1,12 @@
 package com.safetynet.safetynetalerts.dao;
 
-public class FirestationDao {
+import com.safetynet.safetynetalerts.model.Firestation;
 
+public interface FirestationDao {
+
+	public Firestation saveFirestation(Firestation firestation);
+	
+	public Firestation updateFirestation(Firestation firestation);
+	
+	public Firestation deleteFirestation(Firestation firestation);
 }
