@@ -28,4 +28,30 @@ public class DBConstants {
 	public static final String FIND_MEDICATIONS_BY_MEDICALRECORD_ID = "select NAME from medication where medicalRecord_ID=?";
 	public static final String FIND_ALLERGIES_BY_MEDICALRECORD_ID = "select NAME from allergie where medicalRecord_ID=?";
 	public static final String FIND_MEDICALRECORD = "select * from medicalRecord where FIRST_NAME=? and LAST_NAME=?";
+	
+	public static final String GET_PERSONS_BY_STATION = "select PERSON.FIRST_NAME, PERSON.LAST_NAME, PERSON.ADDRESS, PHONE, BIRTHDATE from person"
+			+ " left join firestation on PERSON.ADDRESS=FIRESTATION.ADDRESS left join medicalRecord on PERSON.FIRST_NAME = MEDICALRECORD.FIRST_NAME"
+			+ " and PERSON.LAST_NAME = MEDICALRECORD.LAST_NAME where STATION=?";
+	public static final String GET_PERSONS_AND_BIRTHDATE_BY_ADDRESS = "select PERSON.FIRST_NAME, PERSON.LAST_NAME, BIRTHDATE from person"
+			+ " left join medicalRecord on PERSON.FIRST_NAME=MEDICALRECORD.FIRST_NAME and PERSON.LAST_NAME=MEDICALRECORD.LAST_NAME where ADDRESS=?";
+	public static final String GET_PHONES_BY_STATION = "select PHONE from person left join firestation on PERSON.ADDRESS=FIRESTATION.ADDRESS"
+			+ " where STATION=?";
+	public static final String GET_PERSONS_AND_MEDICALRECORDS_STATION_BY_ADDRESS = "select PERSON.FIRST_NAME, PERSON.LAST_NAME, PHONE,"
+			+ " BIRTHDATE, MEDICATION.NAME, ALLERGIE.NAME, STATION from person"
+			+ " left join medicalRecord on PERSON.FIRST_NAME=MEDICALRECORD.FIRST_NAME AND PERSON.LAST_NAME=MEDICALRECORD.LAST_NAME"
+			+ " left join medication on medicalRecord.ID=MEDICATION.medicalRecord_ID"
+			+ " left join allergie on medicalRecord.ID=ALLERGIE.medicalRecord_ID"
+			+ " left join firestation on PERSON.ADDRESS=FIRESTATION.ADDRESS where PERSON.ADDRESS=?";
+	public static final String GET_PERSONS_AND_MEDICALRECORDS_BY_STATION ="select person.FIRST_NAME, person.LAST_NAME, person.ADDRESS,"
+			+ " PHONE, medicalRecord.BIRTHDATE, medication.NAME, allergie.NAME from person"
+			+ " left join medicalRecord on person.FIRST_NAME=medicalRecord.FIRST_NAME and person.LAST_NAME=medicalRecord.LAST_NAME"
+			+ " left join medication on medicalRecord.ID=medication.medicalRecord_ID"
+			+ " left join allergie on medicalRecord.ID=allergie.medicalRecord_ID"
+			+ " left join firestation on person.ADDRESS=firestation.ADDRESS where station=?";
+	public static final String GET_PERSON_INFO = "select PERSON.FIRST_NAME, PERSON.LAST_NAME, ADDRESS, BIRTHDATE, EMAIL, MEDICATION.NAME,"
+			+ " ALLERGIE.NAME from person"
+			+ " left join medicalRecord on PERSON.FIRST_NAME=MEDICALRECORD.FIRST_NAME AND PERSON.LAST_NAME=MEDICALRECORD.LAST_NAME"
+			+ " left join medication on MEDICALRECORD.ID=MEDICATION.medicalRecord_ID"
+			+ " left join allergie on MEDICALRECORD.ID=ALLERGIE.medicalRecord_ID where PERSON.FIRST_NAME=? and PERSON.LAST_NAME=?";
+	public static final String GET_EMAILS_BY_CITY = "select EMAIL from person where CITY=?";
 }
