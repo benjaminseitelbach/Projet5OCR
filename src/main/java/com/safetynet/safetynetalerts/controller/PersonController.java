@@ -35,8 +35,8 @@ public class PersonController {
 		if (personAdded != null) {
 			
 			//TODO AJOUTER LASTNAME
-			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}")
-					.buildAndExpand(person.getFirstName()).toUri();
+			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}{lastName}")
+					.buildAndExpand(person.getFirstName(), person.getLastName()).toUri();
 			response = ResponseEntity.created(location).build();
 
 			logger.info(response);

@@ -15,7 +15,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import com.safetynet.safetynetalerts.dao.URLsDao;
 import com.safetynet.safetynetalerts.init.Initialization;
 import com.safetynet.safetynetalerts.integration.service.DataBasePrepareService;
-import com.safetynet.safetynetalerts.model.Person;
 
 @SpringBootTest
 public class URLsDaoIntegrationTest {
@@ -36,22 +35,9 @@ public class URLsDaoIntegrationTest {
 	@Test
 	public void getPersonsByStationNumber1Test() throws Exception {
 		String jsonString = urlsDao.getPersonsByStationNumber(1);
-		//List<Person> persons = new ArrayList<>();
 		JSONObject json = new JSONObject(jsonString);
 		JSONArray personsArray = json.getJSONArray("persons");
-		/*
-		for (int line = 0; line < personsArray.length(); line++) {
-			JSONObject personObject = personsArray.getJSONObject(line);
-			Person person = new Person();
-			person.setFirstName(personObject.getString("firstName"));
-			person.setLastName(personObject.getString("lastName"));
-			person.setAddress(personObject.getString("address"));
-			person.setPhone(personObject.getString("phone"));
-			persons.add(person);
-		}
-		
-		assertEquals(persons.size(), 6);
-		*/
+
 		assertEquals(personsArray.length(), 6);
 		int adults = json.getInt("adults");
 		assertEquals(adults, 5);

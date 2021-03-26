@@ -16,5 +16,9 @@ public class Firestation {
 	public void setStation(int station) {
 		this.station = station;
 	}
+	
+	public String toJson() {
+		return "{ \"address\":\"" + address + "\", \"station\":" + station + "}";
+	}
 		
 }

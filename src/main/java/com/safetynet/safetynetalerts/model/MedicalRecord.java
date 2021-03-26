@@ -41,4 +41,41 @@ public class MedicalRecord {
 		this.allergies = allergies;
 	}
 	
+	public String medicationsToJson() {
+		String result = "[";
+		int size = medications.size();
+		for(int iMedication = 0; iMedication < size; iMedication ++) {
+			String medication = medications.get(iMedication);
+			if(iMedication == size - 1) {
+				result += "\"" + medication + "\"";
+			} else {
+				result += "\"" + medication + "\", ";
+			}
+			
+		}
+		result += "]";
+		return result;
+	}
+	
+	public String allergiesToJson() {
+		String result = "[";
+		int size = allergies.size();
+		for(int iAllergie = 0; iAllergie < size; iAllergie ++) {
+			String allergie = allergies.get(iAllergie);
+			if(iAllergie == size - 1) {
+				result += "\"" + allergie + "\"";
+			} else {
+				result += "\"" + allergie + "\", ";
+			}
+			
+		}
+		result += "]";
+		return result;
+	}
+	
+	public String toJson() {
+		return "{ \"firstName\":\"" + firstName + "\", \"lastName\":\"" + lastName + "\", \"birthdate\":\"" + birthDate + 
+				"\", \"medications\":" + medicationsToJson() + ", \"allergies\":" + allergiesToJson() + "}";
+	}
+	
 }
