@@ -21,13 +21,13 @@ import com.safetynet.safetynetalerts.model.MedicalRecord;
 import com.safetynet.safetynetalerts.utils.DatesUtils;
 
 @Repository
-public class URLsDaoImpl implements URLsDao {
+public class URLsRepository implements IURLsRepository {
 
-	private static final Logger logger = LogManager.getLogger("DatasDaoImpl");
+	private static final Logger logger = LogManager.getLogger("URLsRepository");
 
 	public DataBaseConfig dataBaseConfig = new DataBaseConfig();
 
-	public String getPersonsByStationNumber(int station) {
+	public String getFirestation(int stationNumber) {
 		Connection con = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
@@ -37,7 +37,7 @@ public class URLsDaoImpl implements URLsDao {
 		try {
 			con = dataBaseConfig.getConnection();
 			ps = con.prepareStatement(DBConstants.GET_PERSONS_BY_STATION);
-			ps.setInt(1, station);
+			ps.setInt(1, stationNumber);
 			rs = ps.executeQuery();
 
 			while (rs.next()) {
@@ -75,7 +75,7 @@ public class URLsDaoImpl implements URLsDao {
 
 	}
 
-	public String getChildsByAddress(String address) {
+	public String getChildAlert(String address) {
 
 		Connection con = null;
 		PreparedStatement ps = null;
@@ -121,7 +121,7 @@ public class URLsDaoImpl implements URLsDao {
 
 	}
 
-	public String getPhonesByStationNumber(int station) {
+	public String getPhoneAlert(int firestation) {
 		Connection con = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
@@ -130,7 +130,7 @@ public class URLsDaoImpl implements URLsDao {
 		try {
 			con = dataBaseConfig.getConnection();
 			ps = con.prepareStatement(DBConstants.GET_PHONES_BY_STATION);
-			ps.setInt(1, station);
+			ps.setInt(1, firestation);
 			rs = ps.executeQuery();
 
 			while (rs.next()) {
@@ -156,7 +156,7 @@ public class URLsDaoImpl implements URLsDao {
 
 	}
 
-	public String getPersonsByAddress(String address) {
+	public String getFire(String address) {
 		Connection con = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
@@ -238,7 +238,7 @@ public class URLsDaoImpl implements URLsDao {
 	}
 
 	// TODO CAS SOPHIA ZEMICKS 
-	public String getPersonsByStations(List<Integer> stations) {
+	public String getFloodStations(List<Integer> stations) {
 		JSONObject result = new JSONObject();
 		JSONArray resultArray = new JSONArray();
 		
@@ -470,7 +470,7 @@ public class URLsDaoImpl implements URLsDao {
 
 	}
 
-	public String getEmailsByCity(String city) {
+	public String getCommunityEmail(String city) {
 		Connection con = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;

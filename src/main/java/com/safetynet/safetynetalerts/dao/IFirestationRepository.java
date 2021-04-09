@@ -2,7 +2,7 @@ package com.safetynet.safetynetalerts.dao;
 
 import com.safetynet.safetynetalerts.model.Firestation;
 
-public interface FirestationDao {
+public interface IFirestationRepository {
 
 	public Firestation saveFirestation(Firestation firestation);
 	

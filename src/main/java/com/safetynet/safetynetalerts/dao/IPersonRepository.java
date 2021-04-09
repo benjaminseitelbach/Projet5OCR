@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.safetynet.safetynetalerts.model.Person;
 
-public interface PersonDao {
+public interface IPersonRepository {
 
 	public Person savePerson(Person person);
 	

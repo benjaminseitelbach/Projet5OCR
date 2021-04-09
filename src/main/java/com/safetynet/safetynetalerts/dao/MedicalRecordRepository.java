@@ -16,9 +16,9 @@ import com.safetynet.safetynetalerts.model.MedicalRecord;
 import com.safetynet.safetynetalerts.model.Person;
 
 @Repository
-public class MedicalRecordDaoImpl implements MedicalRecordDao {
+public class MedicalRecordRepository implements IMedicalRecordRepository {
 
-	private static final Logger logger = LogManager.getLogger("MedicalRecordDaoImpl");
+	private static final Logger logger = LogManager.getLogger("MedicalRecordRepository");
 
     public DataBaseConfig dataBaseConfig = new DataBaseConfig();
     

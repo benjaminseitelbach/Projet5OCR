@@ -21,46 +21,37 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-//import com.fasterxml.jackson.databind.ObjectMapper;
-import com.safetynet.safetynetalerts.dao.URLsDao;
-
 import com.safetynet.safetynetalerts.init.Initialization;
 import com.safetynet.safetynetalerts.model.Firestation;
 import com.safetynet.safetynetalerts.model.MedicalRecord;
 import com.safetynet.safetynetalerts.model.Person;
+import com.safetynet.safetynetalerts.service.URLsService;
 
 @RestController
 public class MainController {
 
-	private static final Logger logger = LogManager.getLogger("Controller");
+	//private static final Logger logger = LogManager.getLogger("MainController");
 	
 	@Autowired
-	private URLsDao URLsDao;
+	private URLsService urlsService;
 
 	@PostConstruct
 	public void init() {
+		System.out.println("=============INITIALIZATION==========");
 		Initialization.init();
 	}
 	
-
 	@RequestMapping(path = "/firestation", method = RequestMethod.GET)
-	public String getPersonsByStationNumber(@RequestParam int stationNumber) {
-		System.out.println(stationNumber);
-		String personsByStationNumber = URLsDao.getPersonsByStationNumber(stationNumber);
-		
-		logHttpResponse(personsByStationNumber);
-		
-		return personsByStationNumber;
+	public String getFirestation(@RequestParam int stationNumber) {
+		String result = urlsService.getFirestation(stationNumber);		
+		return result;
 	}
 
 	@RequestMapping(path = "/childAlert", method = RequestMethod.GET)
-	public String getChildsByAddress(@RequestParam String address) {
+	public String getChildAlert(@RequestParam String address) {
 
-		String childsByAddress = URLsDao.getChildsByAddress(address);
-		
-		logHttpResponse(childsByAddress);
-		
-		return childsByAddress;
+		String result = urlsService.getChildAlert(address);
+		return result;
 
 	}
 
@@ -68,7 +59,7 @@ public class MainController {
 	@RequestMapping(path = "/phoneAlert", method = RequestMethod.GET)
 	public String getPhonesByStationNumber(@RequestParam int stationNumber) {
 		System.out.println("station number: " + stationNumber);
-		String phonesByStationNumber = URLsDao.getPhonesByStationNumber(stationNumber);
+		String phonesByStationNumber = urlsService.getPhonesByStationNumber(stationNumber);
 		
 		logHttpResponse(phonesByStationNumber);
 		
@@ -78,66 +69,44 @@ public class MainController {
 	*/
 	
 	@RequestMapping(path = "/phoneAlert", method = RequestMethod.GET)
-	public String getPhonesByStationNumber(@RequestParam int firestation) {
+	public String getPhoneAlert(@RequestParam int firestation) {
 		//System.out.println("station number: " + firestation);
-		String phonesByStationNumber = URLsDao.getPhonesByStationNumber(firestation);
-		
-		logHttpResponse(phonesByStationNumber);
-		
-		return phonesByStationNumber;
+		String result = urlsService.getPhoneAlert(firestation);
+		return result;
 
 	}
 
 	@RequestMapping(path = "/fire", method = RequestMethod.GET)
-	public String getPersonsByAddress(@RequestParam String address) {
-
-		String personsByAddress = URLsDao.getPersonsByAddress(address);
-		
-		logHttpResponse(personsByAddress);
-		
-		return personsByAddress;
+	public String getFire(@RequestParam String address) {
+		String result = urlsService.getFire(address);
+		return result;
 	}
 
 	@RequestMapping(path = "/flood/stations", method = RequestMethod.GET)
-	public String getPersonsByStations(@RequestParam List<Integer> stations) {
+	public String getFloodStations(@RequestParam List<Integer> stations) {
 
-		String personsByStations = URLsDao.getPersonsByStations(stations);
-		
-		logHttpResponse(personsByStations);
-		
-		return personsByStations;
+		String result = urlsService.getFloodStations(stations);
+		return result;
 
 	}
 
 	@RequestMapping(path = "/personInfo", method = RequestMethod.GET)
 	public String getPersonInfo(@RequestParam String firstName, @RequestParam String lastName) {
-		String personInfo = URLsDao.getPersonInfo(firstName, lastName);
-		
-		logHttpResponse(personInfo);
-		
-		return personInfo;
+		String result = urlsService.getPersonInfo(firstName, lastName);
+		return result;
 
 	}
 
 	@RequestMapping(path = "/communityEmail", method = RequestMethod.GET)
-	public String getEmailsByCity(@RequestParam String city) {
+	public String getCommunityEmail(@RequestParam String city) {
 
-		String emailsByCity = URLsDao.getEmailsByCity(city);
-		
-		logHttpResponse(emailsByCity);
-		
-		return emailsByCity;
+		String result = urlsService.getCommunityEmail(city);
+		return result;
 
 	}
 	
 
-	public void logHttpResponse(String returnedInfo) {
-		if (returnedInfo == null) {
-			logger.error(HttpStatus.NOT_FOUND);
-		} else {
-			logger.info(HttpStatus.FOUND);
-		}
-	}
+	
 	
 	
 	/*

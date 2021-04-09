@@ -16,7 +16,7 @@ import com.safetynet.safetynetalerts.model.Person;
 import com.safetynet.safetynetalerts.constants.DBConstants;
 
 @Repository
-public class PersonDaoImpl implements PersonDao {
+public class PersonRepository implements IPersonRepository {
 	
 	private static final Logger logger = LogManager.getLogger("PersonDaoImpl");
 

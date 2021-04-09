@@ -6,9 +6,9 @@ import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import com.safetynet.safetynetalerts.dao.FirestationDaoImpl;
-import com.safetynet.safetynetalerts.dao.MedicalRecordDaoImpl;
-import com.safetynet.safetynetalerts.dao.PersonDaoImpl;
+import com.safetynet.safetynetalerts.dao.FirestationRepository;
+import com.safetynet.safetynetalerts.dao.MedicalRecordRepository;
+import com.safetynet.safetynetalerts.dao.PersonRepository;
 import com.safetynet.safetynetalerts.model.Firestation;
 import com.safetynet.safetynetalerts.model.MedicalRecord;
 import com.safetynet.safetynetalerts.model.Person;
@@ -17,9 +17,9 @@ public class ParsingJson {
 
 	public static void parse(String jsonString) {
 
-		PersonDaoImpl personDaoImpl = new PersonDaoImpl();
-		FirestationDaoImpl firestationDaoImpl = new FirestationDaoImpl();
-		MedicalRecordDaoImpl medicalRecordDaoImpl = new MedicalRecordDaoImpl();
+		PersonRepository personRepository = new PersonRepository();
+		FirestationRepository firestationRepository = new FirestationRepository();
+		MedicalRecordRepository medicalRecordRepository = new MedicalRecordRepository();
 		JSONObject json = new JSONObject(jsonString);
 		JSONArray personsArray = json.getJSONArray("persons");
 		for (int line = 0; line < personsArray.length(); line++) {
@@ -32,7 +32,7 @@ public class ParsingJson {
 			person.setZip(personObject.getString("zip"));
 			person.setPhone(personObject.getString("phone"));
 			person.setEmail(personObject.getString("email"));
-			personDaoImpl.savePerson(person);
+			personRepository.savePerson(person);
 		}
 
 		JSONArray firestationsArray = json.getJSONArray("firestations");
@@ -41,7 +41,7 @@ public class ParsingJson {
 			Firestation firestation = new Firestation();
 			firestation.setAddress(firestationObject.getString("address"));
 			firestation.setStation(firestationObject.getInt("station"));
-			firestationDaoImpl.saveFirestation(firestation);
+			firestationRepository.saveFirestation(firestation);
 		}
 
 		JSONArray medicalRecordsArray = json.getJSONArray("medicalrecords");
@@ -64,7 +64,7 @@ public class ParsingJson {
 				allergies.add(allergiesArray.getString(allergie));
 			}
 			medicalRecord.setAllergies(allergies);
-			medicalRecordDaoImpl.saveMedicalRecord(medicalRecord);
+			medicalRecordRepository.saveMedicalRecord(medicalRecord);
 		}
 
 	}

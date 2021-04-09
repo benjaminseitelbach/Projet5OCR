@@ -1,12 +1,17 @@
 package com.safetynet.safetynetalerts.model;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
+
 public class Person {
+	@NotNull
 	private String firstName;
 	private String lastName;
 	private String address;
 	private String city;
 	private String zip;
 	private String phone;
+	@Email
 	private String email;
 	
 	public String getFirstName() {

@@ -22,7 +22,7 @@ public class PersonControllerTest {
 	@MockBean
 	private PersonDao personDao;
 	
-	/*
+	
 	@Test
 	public void testPostPerson() throws Exception {
 		//GIVEN
@@ -34,6 +34,6 @@ public class PersonControllerTest {
 	    		//.andExpect(status().isOk()).andReturn();
 	    		
 	}
-	*/
+	
 	
 }

@@ -15,9 +15,9 @@ import com.safetynet.safetynetalerts.model.MedicalRecord;
 import com.safetynet.safetynetalerts.model.Person;
 
 @Repository
-public class FirestationDaoImpl implements FirestationDao {
+public class FirestationRepository implements IFirestationRepository {
 	
-	private static final Logger logger = LogManager.getLogger("FirestationDaoImpl");
+	private static final Logger logger = LogManager.getLogger("FirestationRepository");
 
     public DataBaseConfig dataBaseConfig = new DataBaseConfig();
     
