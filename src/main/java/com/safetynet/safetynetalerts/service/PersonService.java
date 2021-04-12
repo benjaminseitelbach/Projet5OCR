@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.safetynet.safetynetalerts.dao.IPersonRepository;
+import com.safetynet.safetynetalerts.dao.PersonRepository;
 import com.safetynet.safetynetalerts.model.Person;
 
 @Service
@@ -17,11 +18,11 @@ public class PersonService {
 
 	private static final Logger logger = LogManager.getLogger("PersonService");
 	
-	@Autowired
-	private IPersonRepository iPersonRepository;
+	//@Autowired
+	private PersonRepository personRepository = new PersonRepository();
 
 	public ResponseEntity<Void> savePerson(Person person) {
-		Person savedPerson = iPersonRepository.savePerson(person);
+		Person savedPerson = personRepository.savePerson(person);
 		
 		ResponseEntity<Void> response;
 		if (savedPerson != null) {

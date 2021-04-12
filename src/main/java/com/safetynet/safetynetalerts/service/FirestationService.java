@@ -27,8 +27,8 @@ public class FirestationService {
 		if (savedFirestation != null) {
 			
 			//TODO PATH A CHECK
-			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
-					.buildAndExpand(savedFirestation.getStation()).toUri();
+			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{address}{station}")
+					.buildAndExpand(savedFirestation.getAddress(), savedFirestation.getStation()).toUri();
 			response = ResponseEntity.created(location).build();
 			
 			logger.info(response);
@@ -47,9 +47,8 @@ public class FirestationService {
 		ResponseEntity<Void> response;
 		if (updatedFirestation != null) {
 			
-			//URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}")
-			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("")
-					.buildAndExpand(updatedFirestation.getStation()).toUri();
+			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{address}{station}")
+					.buildAndExpand(updatedFirestation.getAddress(), updatedFirestation.getStation()).toUri();
 			response = ResponseEntity.created(location).build();
 			
 			logger.info(response);
@@ -62,15 +61,15 @@ public class FirestationService {
 		}
 	}
 	
+	/*
 	public ResponseEntity<Void> deleteFirestation(Firestation firestation) {
 		Firestation deletedFirestation = iFirestationRepository.deleteFirestation(firestation);
 		
 		ResponseEntity<Void> response;
 		if (deletedFirestation != null) {
 			
-			//URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}")
-			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("")
-					.buildAndExpand(deletedFirestation.getStation()).toUri();
+			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{address}{station}")
+					.buildAndExpand(deletedFirestation.getAddress() , deletedFirestation.getStation()).toUri();
 			response = ResponseEntity.created(location).build();
 			
 			logger.info(response);
@@ -82,4 +81,5 @@ public class FirestationService {
 			return response;
 		}
 	}
+	*/
 }

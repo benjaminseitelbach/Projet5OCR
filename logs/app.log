@@ -1,511 +1,550 @@
-2021-04-09 14:07:37,303 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
-2021-04-09 14:07:37,328 INFO c.s.s.SafetynetalertsApplication [main] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-FUA19CP with PID 1252 (G:\Documents\Cours\OPENCLASSROOM\PROJET5\Code_2\safetynetalerts\target\classes started by bseit in G:\Documents\Cours\OPENCLASSROOM\PROJET5\Code_2\safetynetalerts)
-2021-04-09 14:07:37,331 INFO c.s.s.SafetynetalertsApplication [main] No active profile set, falling back to default profiles: default
-2021-04-09 14:07:38,150 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2021-04-09 14:07:38,163 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2021-04-09 14:07:38,165 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
-2021-04-09 14:07:38,166 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.44]
-2021-04-09 14:07:38,226 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
-2021-04-09 14:07:38,226 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 868 ms
-2021-04-09 14:07:38,360 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,628 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,628 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,628 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,628 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,643 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,643 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,643 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,643 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,657 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,657 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,657 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,657 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,669 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,669 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,670 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,670 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,684 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,685 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,685 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,685 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,698 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,698 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,699 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,699 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,711 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,712 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,712 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,712 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,725 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,725 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,725 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,725 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,738 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,738 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,738 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,738 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,751 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,751 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,751 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,751 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,765 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,765 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,765 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,765 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,779 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,779 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,779 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,779 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,793 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,793 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,793 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,793 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,807 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,807 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,807 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,807 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,821 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,821 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,821 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,821 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,834 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,834 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,834 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,834 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,847 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,847 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,847 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,847 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,858 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,858 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,858 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,858 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,870 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,870 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,870 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,870 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,881 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,881 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,881 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,881 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,891 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,891 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,891 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,891 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,901 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,901 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,901 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,901 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,912 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,912 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,912 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,913 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,924 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,924 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,924 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,924 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,934 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,934 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,934 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,934 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,946 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,946 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,946 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,946 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,957 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,958 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,958 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,958 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,968 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,968 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,968 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,968 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,981 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,981 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,981 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,981 INFO Controller [main] Create DB connection
-2021-04-09 14:07:38,991 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:38,991 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:38,992 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:38,992 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,002 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,002 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,002 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,002 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,012 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,012 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,012 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,012 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,026 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,026 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,026 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,026 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,035 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,035 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,035 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,035 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,044 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,044 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,044 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,044 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,052 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,052 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,052 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,053 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,064 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,064 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,064 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,064 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,073 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,073 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,073 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,073 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,081 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,082 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,082 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,082 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,090 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,090 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,090 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,090 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,099 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,099 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,099 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,099 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,107 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,107 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,107 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,107 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,116 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,116 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,116 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,116 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,125 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,125 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,125 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,125 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,134 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,134 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,134 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,134 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,142 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,142 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,142 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,142 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,151 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,151 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,151 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,151 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,159 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,159 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,159 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,159 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,168 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,168 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,168 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,168 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,177 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,177 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,177 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,177 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,186 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,186 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,186 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,186 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,195 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,196 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,196 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,196 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,205 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,205 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,205 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,205 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,214 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,214 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,214 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,214 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,223 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,223 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,223 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,223 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,231 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,231 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,231 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,231 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,239 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,240 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,240 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,240 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,248 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,248 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,248 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,248 INFO Controller [main] Create DB connection
-2021-04-09 14:07:39,256 INFO Controller [main] Closing DB connection
-2021-04-09 14:07:39,256 INFO Controller [main] Closing Result Set
-2021-04-09 14:07:39,256 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:07:39,331 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-09 14:07:39,530 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 13 endpoint(s) beneath base path '/actuator'
-2021-04-09 14:07:39,549 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2021-04-09 14:07:39,567 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-09 14:07:39,579 INFO c.s.s.SafetynetalertsApplication [main] Started SafetynetalertsApplication in 2.458 seconds (JVM running for 3.01)
-2021-04-09 14:07:45,257 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-09 14:07:45,257 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
-2021-04-09 14:07:45,257 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
-2021-04-09 14:07:45,339 WARN o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> com.safetynet.safetynetalerts.controller.PersonController.savePerson(com.safetynet.safetynetalerts.model.Person): [Field error in object 'person' on field 'email': rejected value [EmailTest]; codes [Email.person.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [person.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@3f96220d,.*]; default message [doit être une adresse électronique syntaxiquement correcte]] ]
-2021-04-09 14:09:00,290 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
-2021-04-09 14:09:00,315 INFO c.s.s.SafetynetalertsApplication [main] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-FUA19CP with PID 7264 (G:\Documents\Cours\OPENCLASSROOM\PROJET5\Code_2\safetynetalerts\target\classes started by bseit in G:\Documents\Cours\OPENCLASSROOM\PROJET5\Code_2\safetynetalerts)
-2021-04-09 14:09:00,318 INFO c.s.s.SafetynetalertsApplication [main] No active profile set, falling back to default profiles: default
-2021-04-09 14:09:01,127 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2021-04-09 14:09:01,140 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2021-04-09 14:09:01,140 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
-2021-04-09 14:09:01,141 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.44]
-2021-04-09 14:09:01,200 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
-2021-04-09 14:09:01,201 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 857 ms
-2021-04-09 14:09:01,340 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,615 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,615 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,615 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,615 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,631 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,631 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,631 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,632 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,645 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,645 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,646 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,646 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,660 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,660 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,660 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,660 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,674 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,674 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,674 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,674 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,687 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,687 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,687 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,687 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,701 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,702 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,702 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,702 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,716 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,716 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,716 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,716 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,729 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,729 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,729 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,729 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,741 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,741 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,741 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,741 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,754 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,754 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,754 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,754 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,770 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,770 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,770 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,770 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,786 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,786 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,786 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,786 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,800 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,801 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,801 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,801 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,816 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,816 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,816 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,816 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,829 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,829 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,829 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,829 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,841 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,841 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,841 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,841 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,852 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,852 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,852 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,852 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,863 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,863 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,863 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,863 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,874 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,874 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,874 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,874 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,884 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,884 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,884 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,884 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,895 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,895 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,895 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,895 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,907 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,907 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,907 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,907 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,918 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,919 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,919 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,919 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,929 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,929 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,929 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,929 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,941 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,941 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,941 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,941 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,951 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,952 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,952 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,952 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,962 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,962 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,962 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,962 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,973 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,973 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,973 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,973 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,983 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,984 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,984 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,984 INFO Controller [main] Create DB connection
-2021-04-09 14:09:01,994 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:01,994 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:01,994 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:01,994 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,004 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,004 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,004 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,004 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,015 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,015 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,015 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,015 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,024 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,024 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,024 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,024 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,032 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,033 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,033 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,033 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,042 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,042 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,042 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,042 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,052 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,052 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,052 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,052 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,061 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,061 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,061 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,061 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,070 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,070 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,070 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,070 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,078 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,079 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,079 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,079 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,087 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,087 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,087 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,087 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,096 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,096 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,096 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,096 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,106 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,106 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,106 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,106 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,114 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,115 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,115 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,115 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,123 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,123 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,123 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,123 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,132 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,132 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,132 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,132 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,140 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,140 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,140 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,140 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,149 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,149 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,149 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,149 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,157 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,157 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,157 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,157 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,166 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,166 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,166 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,166 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,175 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,175 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,175 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,175 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,185 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,185 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,185 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,185 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,194 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,194 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,194 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,194 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,203 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,203 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,203 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,203 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,211 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,211 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,211 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,211 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,220 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,220 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,220 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,220 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,228 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,229 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,229 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,229 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,237 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,237 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,237 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,237 INFO Controller [main] Create DB connection
-2021-04-09 14:09:02,245 INFO Controller [main] Closing DB connection
-2021-04-09 14:09:02,245 INFO Controller [main] Closing Result Set
-2021-04-09 14:09:02,245 INFO Controller [main] Closing Prepared Statement
-2021-04-09 14:09:02,323 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-09 14:09:02,533 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 13 endpoint(s) beneath base path '/actuator'
-2021-04-09 14:09:02,553 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2021-04-09 14:09:02,570 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-09 14:09:02,580 INFO c.s.s.SafetynetalertsApplication [main] Started SafetynetalertsApplication in 2.473 seconds (JVM running for 3.018)
-2021-04-09 14:09:15,065 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-09 14:09:15,065 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
-2021-04-09 14:09:15,065 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
-2021-04-09 14:09:15,112 INFO Controller [http-nio-8080-exec-2] Create DB connection
-2021-04-09 14:09:15,124 INFO Controller [http-nio-8080-exec-2] Closing DB connection
-2021-04-09 14:09:15,124 INFO Controller [http-nio-8080-exec-2] Closing Prepared Statement
-2021-04-09 14:09:15,129 INFO PersonService [http-nio-8080-exec-2] <201 CREATED Created,[Location:"http://localhost:8080/person/FirstNameTestLastNameTest"]>
+2021-04-12 15:05:58,855 INFO Controller [main] Create DB connection
+2021-04-12 15:05:59,148 ERROR PersonDaoImpl [main] Error saving new person
+java.lang.NullPointerException: Cannot invoke "com.safetynet.safetynetalerts.model.Person.getFirstName()" because "person" is null
+	at com.safetynet.safetynetalerts.dao.PersonRepository.savePerson(PersonRepository.java:33) ~[classes/:?]
+	at com.safetynet.safetynetalerts.service.PersonServiceTest.savePersonTest(PersonServiceTest.java:48) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688) ~[junit-platform-commons-1.7.1.jar:1.7.1]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108) ~[junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) [junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) [junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96) [junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:84) [junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) [.cp/:?]
+2021-04-12 15:05:59,152 INFO Controller [main] Closing DB connection
+2021-04-12 15:05:59,152 INFO Controller [main] Closing Prepared Statement
+2021-04-12 15:11:37,769 INFO Controller [main] Create DB connection
+2021-04-12 15:11:38,060 ERROR PersonDaoImpl [main] Error saving new person
+java.lang.NullPointerException: Cannot invoke "com.safetynet.safetynetalerts.model.Person.getFirstName()" because "person" is null
+	at com.safetynet.safetynetalerts.dao.PersonRepository.savePerson(PersonRepository.java:33) ~[classes/:?]
+	at com.safetynet.safetynetalerts.service.PersonServiceTest.savePersonTest(PersonServiceTest.java:50) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688) ~[junit-platform-commons-1.7.1.jar:1.7.1]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108) ~[junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) [junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) [junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96) [junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:84) [junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) [.cp/:?]
+2021-04-12 15:11:38,064 INFO Controller [main] Closing DB connection
+2021-04-12 15:11:38,064 INFO Controller [main] Closing Prepared Statement
+2021-04-12 15:13:58,327 INFO Controller [main] Create DB connection
+2021-04-12 15:13:58,626 INFO Controller [main] Closing DB connection
+2021-04-12 15:13:58,626 INFO Controller [main] Closing Prepared Statement
+2021-04-12 15:14:47,689 INFO Controller [main] Create DB connection
+2021-04-12 15:14:47,984 INFO Controller [main] Closing DB connection
+2021-04-12 15:14:47,984 INFO Controller [main] Closing Prepared Statement
+2021-04-12 15:14:47,995 INFO Controller [main] Create DB connection
+2021-04-12 15:14:48,013 INFO Controller [main] Closing DB connection
+2021-04-12 15:14:48,013 INFO Controller [main] Closing Prepared Statement
+2021-04-12 15:19:49,950 INFO Controller [main] Create DB connection
+2021-04-12 15:19:50,242 INFO Controller [main] Closing DB connection
+2021-04-12 15:19:50,242 INFO Controller [main] Closing Prepared Statement
+2021-04-12 15:19:50,253 INFO Controller [main] Create DB connection
+2021-04-12 15:19:50,274 INFO Controller [main] Closing DB connection
+2021-04-12 15:19:50,274 INFO Controller [main] Closing Prepared Statement
+2021-04-12 15:23:42,547 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest], using SpringBootContextLoader
+2021-04-12 15:23:42,557 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-04-12 15:23:42,557 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: PersonControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-04-12 15:23:42,647 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.safetynet.safetynetalerts.SafetynetalertsApplication for test class com.safetynet.safetynetalerts.controller.PersonControllerTest
+2021-04-12 15:23:42,650 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-04-12 15:23:42,657 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3a7b503d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@512d92b, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@62c5bbdc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7bdf6bb7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1bc53649, org.springframework.test.context.support.DirtiesContextTestExecutionListener@88d6f9b, org.springframework.test.context.event.EventPublishingTestExecutionListener@47d93e0d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@475b7792, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@751e664e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@160c3ec1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@182b435b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4d0402b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2fa7ae9]
+2021-04-12 15:23:42,862 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-04-12 15:23:42,878 WARN o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bseit/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bseit/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-04-12 15:23:42,884 INFO c.s.s.c.PersonControllerTest [main] Starting PersonControllerTest using Java 15.0.2 on DESKTOP-FUA19CP with PID 6344 (started by bseit in G:\Documents\Cours\OPENCLASSROOM\PROJET5\Code_2\safetynetalerts)
+2021-04-12 15:23:42,886 INFO c.s.s.c.PersonControllerTest [main] No active profile set, falling back to default profiles: default
+2021-04-12 15:23:43,815 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 15:23:44,004 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2021-04-12 15:23:44,004 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2021-04-12 15:23:44,005 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
+2021-04-12 15:23:44,026 INFO c.s.s.c.PersonControllerTest [main] Started PersonControllerTest in 1.34 seconds (JVM running for 2.229)
+2021-04-12 15:23:44,153 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 16:19:25,925 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest], using SpringBootContextLoader
+2021-04-12 16:19:25,934 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-04-12 16:19:25,935 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: PersonControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-04-12 16:19:26,020 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.safetynet.safetynetalerts.SafetynetalertsApplication for test class com.safetynet.safetynetalerts.controller.PersonControllerTest
+2021-04-12 16:19:26,023 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-04-12 16:19:26,030 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@58783f6c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a7b503d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@512d92b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@62c5bbdc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7bdf6bb7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1bc53649, org.springframework.test.context.event.EventPublishingTestExecutionListener@88d6f9b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@47d93e0d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@475b7792, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@751e664e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@160c3ec1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@182b435b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4d0402b]
+2021-04-12 16:19:26,229 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-04-12 16:19:26,243 WARN o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bseit/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bseit/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-04-12 16:19:26,250 INFO c.s.s.c.PersonControllerTest [main] Starting PersonControllerTest using Java 15.0.2 on DESKTOP-FUA19CP with PID 10876 (started by bseit in G:\Documents\Cours\OPENCLASSROOM\PROJET5\Code_2\safetynetalerts)
+2021-04-12 16:19:26,252 INFO c.s.s.c.PersonControllerTest [main] No active profile set, falling back to default profiles: default
+2021-04-12 16:19:27,124 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 16:19:27,318 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2021-04-12 16:19:27,318 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2021-04-12 16:19:27,319 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
+2021-04-12 16:19:27,340 INFO c.s.s.c.PersonControllerTest [main] Started PersonControllerTest in 1.28 seconds (JVM running for 2.173)
+2021-04-12 16:19:27,451 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 16:19:49,007 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest], using SpringBootContextLoader
+2021-04-12 16:19:49,016 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-04-12 16:19:49,016 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: PersonControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-04-12 16:19:49,101 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.safetynet.safetynetalerts.SafetynetalertsApplication for test class com.safetynet.safetynetalerts.controller.PersonControllerTest
+2021-04-12 16:19:49,104 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-04-12 16:19:49,110 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@58783f6c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a7b503d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@512d92b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@62c5bbdc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7bdf6bb7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1bc53649, org.springframework.test.context.event.EventPublishingTestExecutionListener@88d6f9b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@47d93e0d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@475b7792, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@751e664e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@160c3ec1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@182b435b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4d0402b]
+2021-04-12 16:19:49,316 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-04-12 16:19:49,331 WARN o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bseit/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bseit/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-04-12 16:19:49,337 INFO c.s.s.c.PersonControllerTest [main] Starting PersonControllerTest using Java 15.0.2 on DESKTOP-FUA19CP with PID 10508 (started by bseit in G:\Documents\Cours\OPENCLASSROOM\PROJET5\Code_2\safetynetalerts)
+2021-04-12 16:19:49,340 INFO c.s.s.c.PersonControllerTest [main] No active profile set, falling back to default profiles: default
+2021-04-12 16:19:50,216 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 16:19:50,399 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2021-04-12 16:19:50,400 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2021-04-12 16:19:50,400 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 0 ms
+2021-04-12 16:19:50,424 INFO c.s.s.c.PersonControllerTest [main] Started PersonControllerTest in 1.285 seconds (JVM running for 2.171)
+2021-04-12 16:19:50,545 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 16:20:43,606 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest], using SpringBootContextLoader
+2021-04-12 16:20:43,615 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-04-12 16:20:43,615 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: PersonControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-04-12 16:20:43,700 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.safetynet.safetynetalerts.SafetynetalertsApplication for test class com.safetynet.safetynetalerts.controller.PersonControllerTest
+2021-04-12 16:20:43,702 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-04-12 16:20:43,709 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@58783f6c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a7b503d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@512d92b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@62c5bbdc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7bdf6bb7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1bc53649, org.springframework.test.context.event.EventPublishingTestExecutionListener@88d6f9b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@47d93e0d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@475b7792, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@751e664e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@160c3ec1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@182b435b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4d0402b]
+2021-04-12 16:20:43,915 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-04-12 16:20:43,930 WARN o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bseit/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bseit/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-04-12 16:20:43,936 INFO c.s.s.c.PersonControllerTest [main] Starting PersonControllerTest using Java 15.0.2 on DESKTOP-FUA19CP with PID 9580 (started by bseit in G:\Documents\Cours\OPENCLASSROOM\PROJET5\Code_2\safetynetalerts)
+2021-04-12 16:20:43,939 INFO c.s.s.c.PersonControllerTest [main] No active profile set, falling back to default profiles: default
+2021-04-12 16:20:44,844 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 16:20:45,025 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2021-04-12 16:20:45,025 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2021-04-12 16:20:45,025 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 0 ms
+2021-04-12 16:20:45,044 INFO c.s.s.c.PersonControllerTest [main] Started PersonControllerTest in 1.308 seconds (JVM running for 2.178)
+2021-04-12 16:20:45,148 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 16:21:23,379 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest], using SpringBootContextLoader
+2021-04-12 16:21:23,388 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-04-12 16:21:23,389 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: PersonControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-04-12 16:21:23,469 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.safetynet.safetynetalerts.SafetynetalertsApplication for test class com.safetynet.safetynetalerts.controller.PersonControllerTest
+2021-04-12 16:21:23,471 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-04-12 16:21:23,478 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1fe8d51b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@781e7326, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@22680f52, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@60d84f61, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@39c11e6c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@324dcd31, org.springframework.test.context.event.EventPublishingTestExecutionListener@503d56b5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@72bca894, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@433ffad1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1fc793c2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2575f671, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@329a1243, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@ecf9fb3]
+2021-04-12 16:21:23,678 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-04-12 16:21:23,694 WARN o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bseit/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bseit/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-04-12 16:21:23,701 INFO c.s.s.c.PersonControllerTest [main] Starting PersonControllerTest using Java 15.0.2 on DESKTOP-FUA19CP with PID 8136 (started by bseit in G:\Documents\Cours\OPENCLASSROOM\PROJET5\Code_2\safetynetalerts)
+2021-04-12 16:21:23,706 INFO c.s.s.c.PersonControllerTest [main] No active profile set, falling back to default profiles: default
+2021-04-12 16:21:24,105 WARN o.s.w.c.s.GenericWebApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'personController': Unsatisfied dependency expressed through field 'personService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.safetynet.safetynetalerts.service.PersonService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-04-12 16:21:24,108 INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-12 16:21:24,120 ERROR o.s.b.d.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field personService in com.safetynet.safetynetalerts.controller.PersonController required a bean of type 'com.safetynet.safetynetalerts.service.PersonService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.safetynet.safetynetalerts.service.PersonService' in your configuration.
+
+2021-04-12 16:21:24,155 WARN o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bseit/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bseit/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-04-12 16:21:24,156 INFO c.s.s.c.PersonControllerTest [main] Starting PersonControllerTest using Java 15.0.2 on DESKTOP-FUA19CP with PID 8136 (started by bseit in G:\Documents\Cours\OPENCLASSROOM\PROJET5\Code_2\safetynetalerts)
+2021-04-12 16:21:24,157 INFO c.s.s.c.PersonControllerTest [main] No active profile set, falling back to default profiles: default
+2021-04-12 16:21:24,254 WARN o.s.w.c.s.GenericWebApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'personController': Unsatisfied dependency expressed through field 'personService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.safetynet.safetynetalerts.service.PersonService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-04-12 16:21:24,255 INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-12 16:21:24,257 ERROR o.s.b.d.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field personService in com.safetynet.safetynetalerts.controller.PersonController required a bean of type 'com.safetynet.safetynetalerts.service.PersonService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.safetynet.safetynetalerts.service.PersonService' in your configuration.
+
+2021-04-12 16:21:24,258 ERROR o.s.t.c.TestContextManager [main] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@39c11e6c] to prepare test instance [com.safetynet.safetynetalerts.controller.PersonControllerTest@5e8507f1]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.5.jar:5.3.5]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.5.jar:5.3.5]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.5.jar:5.3.5]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.5.jar:5.3.5]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.3.5.jar:5.3.5]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.5.jar:5.3.5]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at java.util.Optional.orElseGet(Optional.java:362) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.1.jar:5.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108) ~[junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) [junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) [junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96) [junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:84) [junit-platform-launcher-1.7.1.jar:1.7.1]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) [.cp/:?]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'personController': Unsatisfied dependency expressed through field 'personService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.safetynet.safetynetalerts.service.PersonService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.4.4.jar:2.4.4]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.5.jar:5.3.5]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.5.jar:5.3.5]
+	... 70 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.safetynet.safetynetalerts.service.PersonService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.4.4.jar:2.4.4]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.5.jar:5.3.5]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.5.jar:5.3.5]
+	... 70 more
+2021-04-12 16:23:38,878 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest], using SpringBootContextLoader
+2021-04-12 16:23:38,887 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-04-12 16:23:38,888 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: PersonControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-04-12 16:23:38,974 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.safetynet.safetynetalerts.SafetynetalertsApplication for test class com.safetynet.safetynetalerts.controller.PersonControllerTest
+2021-04-12 16:23:38,976 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-04-12 16:23:38,982 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@512d92b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@62c5bbdc, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7bdf6bb7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1bc53649, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@88d6f9b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@47d93e0d, org.springframework.test.context.event.EventPublishingTestExecutionListener@475b7792, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@751e664e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@160c3ec1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@182b435b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4d0402b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2fa7ae9, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7577b641]
+2021-04-12 16:23:39,188 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-04-12 16:23:39,203 WARN o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bseit/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bseit/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-04-12 16:23:39,210 INFO c.s.s.c.PersonControllerTest [main] Starting PersonControllerTest using Java 15.0.2 on DESKTOP-FUA19CP with PID 2156 (started by bseit in G:\Documents\Cours\OPENCLASSROOM\PROJET5\Code_2\safetynetalerts)
+2021-04-12 16:23:39,213 INFO c.s.s.c.PersonControllerTest [main] No active profile set, falling back to default profiles: default
+2021-04-12 16:23:40,117 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 16:23:40,295 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2021-04-12 16:23:40,295 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2021-04-12 16:23:40,296 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
+2021-04-12 16:23:40,316 INFO c.s.s.c.PersonControllerTest [main] Started PersonControllerTest in 1.302 seconds (JVM running for 2.179)
+2021-04-12 16:23:40,425 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 16:38:03,808 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest], using SpringBootContextLoader
+2021-04-12 16:38:03,818 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-04-12 16:38:03,818 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: PersonControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-04-12 16:38:03,909 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.safetynet.safetynetalerts.SafetynetalertsApplication for test class com.safetynet.safetynetalerts.controller.PersonControllerTest
+2021-04-12 16:38:03,911 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-04-12 16:38:03,918 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7bdf6bb7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1bc53649, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@88d6f9b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@47d93e0d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@475b7792, org.springframework.test.context.support.DirtiesContextTestExecutionListener@751e664e, org.springframework.test.context.event.EventPublishingTestExecutionListener@160c3ec1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@182b435b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4d0402b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2fa7ae9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7577b641, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3704122f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3153ddfc]
+2021-04-12 16:38:04,133 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-04-12 16:38:04,147 WARN o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bseit/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bseit/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-04-12 16:38:04,154 INFO c.s.s.c.PersonControllerTest [main] Starting PersonControllerTest using Java 15.0.2 on DESKTOP-FUA19CP with PID 10480 (started by bseit in G:\Documents\Cours\OPENCLASSROOM\PROJET5\Code_2\safetynetalerts)
+2021-04-12 16:38:04,157 INFO c.s.s.c.PersonControllerTest [main] No active profile set, falling back to default profiles: default
+2021-04-12 16:38:05,079 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 16:38:05,285 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2021-04-12 16:38:05,286 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2021-04-12 16:38:05,286 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 0 ms
+2021-04-12 16:38:05,309 INFO c.s.s.c.PersonControllerTest [main] Started PersonControllerTest in 1.36 seconds (JVM running for 2.28)
+2021-04-12 16:38:05,443 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 16:39:13,686 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest], using SpringBootContextLoader
+2021-04-12 16:39:13,695 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-04-12 16:39:13,696 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.safetynet.safetynetalerts.controller.PersonControllerTest]: PersonControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-04-12 16:39:13,791 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.safetynet.safetynetalerts.SafetynetalertsApplication for test class com.safetynet.safetynetalerts.controller.PersonControllerTest
+2021-04-12 16:39:13,793 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-04-12 16:39:13,799 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7bdf6bb7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1bc53649, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@88d6f9b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@47d93e0d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@475b7792, org.springframework.test.context.support.DirtiesContextTestExecutionListener@751e664e, org.springframework.test.context.event.EventPublishingTestExecutionListener@160c3ec1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@182b435b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4d0402b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2fa7ae9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7577b641, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3704122f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3153ddfc]
+2021-04-12 16:39:14,009 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-04-12 16:39:14,025 WARN o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bseit/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bseit/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-04-12 16:39:14,034 INFO c.s.s.c.PersonControllerTest [main] Starting PersonControllerTest using Java 15.0.2 on DESKTOP-FUA19CP with PID 180 (started by bseit in G:\Documents\Cours\OPENCLASSROOM\PROJET5\Code_2\safetynetalerts)
+2021-04-12 16:39:14,036 INFO c.s.s.c.PersonControllerTest [main] No active profile set, falling back to default profiles: default
+2021-04-12 16:39:14,928 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 16:39:15,119 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2021-04-12 16:39:15,120 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2021-04-12 16:39:15,120 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 0 ms
+2021-04-12 16:39:15,142 INFO c.s.s.c.PersonControllerTest [main] Started PersonControllerTest in 1.313 seconds (JVM running for 2.229)
+2021-04-12 16:39:15,278 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-12 17:44:23,071 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.safetynet.safetynetalerts.controller.FirestationControllerTest], using SpringBootContextLoader
+2021-04-12 17:44:23,081 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.safetynet.safetynetalerts.controller.FirestationControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-04-12 17:44:23,081 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.safetynet.safetynetalerts.controller.FirestationControllerTest]: FirestationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-04-12 17:44:23,167 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.safetynet.safetynetalerts.SafetynetalertsApplication for test class com.safetynet.safetynetalerts.controller.FirestationControllerTest
+2021-04-12 17:44:23,170 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-04-12 17:44:23,177 INFO o.s.b.t.a.w.s.WebMvcTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@512d92b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@62c5bbdc, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7bdf6bb7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1bc53649, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@88d6f9b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@47d93e0d, org.springframework.test.context.event.EventPublishingTestExecutionListener@475b7792, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@751e664e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@160c3ec1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@182b435b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4d0402b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2fa7ae9, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7577b641]
+2021-04-12 17:44:23,385 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-04-12 17:44:23,397 WARN o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bseit/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bseit/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-04-12 17:44:23,403 INFO c.s.s.c.FirestationControllerTest [main] Starting FirestationControllerTest using Java 15.0.2 on DESKTOP-FUA19CP with PID 11664 (started by bseit in G:\Documents\Cours\OPENCLASSROOM\PROJET5\Code_2\safetynetalerts)
+2021-04-12 17:44:23,408 INFO c.s.s.c.FirestationControllerTest [main] No active profile set, falling back to default profiles: default
+2021-04-12 17:44:24,281 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-12 17:44:24,466 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2021-04-12 17:44:24,466 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2021-04-12 17:44:24,467 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
+2021-04-12 17:44:24,493 INFO c.s.s.c.FirestationControllerTest [main] Started FirestationControllerTest in 1.286 seconds (JVM running for 2.197)
+2021-04-12 17:44:24,619 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
