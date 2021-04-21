@@ -1,9 +1,6 @@
 package com.safetynet.safetynetalerts.controller;
 
 import java.net.URI;
-
-import javax.validation.Valid;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,27 +21,68 @@ import com.safetynet.safetynetalerts.service.PersonService;
 @RequestMapping("/person")
 public class PersonController {
 
-	//private static final Logger logger = LogManager.getLogger("PersonController");
+	private static final Logger logger = LogManager.getLogger("PersonController");
 
 	@Autowired
 	private PersonService personService;
 
 	@PostMapping
-	public ResponseEntity<Void> savePerson(@RequestBody /* TODO @Valid NE FONCTIONNE PAS*/Person person) {
+	public ResponseEntity<Void> savePerson(/*@Valid */@RequestBody /* TODO @Valid NE FONCTIONNE PAS*/Person person) {
 		System.out.println("person before dao:" + person);
-		ResponseEntity<Void> response = personService.savePerson(person);
+		
+		ResponseEntity<Void> response;
+		
+		try {
+			//Person savedPerson = personService.savePerson(person);
+			personService.savePerson(person);
+			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}{lastName}")
+					.buildAndExpand(person.getFirstName(), person.getLastName()).toUri();
+			response = ResponseEntity.created(location).build();
+			logger.info(response);
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			response = ResponseEntity.badRequest().build();
+			logger.error(response);
+		}
 		return response;
+		
+
 	}
 
 	@PutMapping
 	public ResponseEntity<Void> updatePerson(@RequestBody Person person) {
-		ResponseEntity<Void> response = personService.updatePerson(person);
+		ResponseEntity<Void> response;
+
+		try {
+			personService.updatePerson(person);
+			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}{lastName}")
+					.buildAndExpand(person.getFirstName(), person.getLastName()).toUri();
+			response = ResponseEntity.created(location).build();
+			logger.info(response);
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			response = ResponseEntity.badRequest().build();
+			logger.error(response);
+		}
 		return response;
 	}
 
 	@DeleteMapping
-	public ResponseEntity<Void> deletePerson(@RequestParam String firstName, @RequestParam String lastName) {
-		ResponseEntity<Void> response = personService.deletePerson(firstName, lastName);
+	public ResponseEntity<Void> deletePerson(@RequestBody Person person) {
+		ResponseEntity<Void> response;
+
+		try {
+			personService.deletePerson(person);
+			response = ResponseEntity.status(200).build();
+			logger.info(response);
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			response = ResponseEntity.badRequest().build();
+			logger.error(response);
+		}
 		return response;
 	}
 }

@@ -30,7 +30,7 @@ import com.safetynet.safetynetalerts.service.URLsService;
 @RestController
 public class MainController {
 
-	//private static final Logger logger = LogManager.getLogger("MainController");
+	private static final Logger logger = LogManager.getLogger("MainController");
 	
 	@Autowired
 	private URLsService urlsService;
@@ -43,7 +43,8 @@ public class MainController {
 	
 	@RequestMapping(path = "/firestation", method = RequestMethod.GET)
 	public String getFirestation(@RequestParam int stationNumber) {
-		String result = urlsService.getFirestation(stationNumber);		
+		String result = urlsService.getFirestation(stationNumber);
+		logHttpResponse(result);
 		return result;
 	}
 
@@ -51,27 +52,16 @@ public class MainController {
 	public String getChildAlert(@RequestParam String address) {
 
 		String result = urlsService.getChildAlert(address);
+		logHttpResponse(result);
 		return result;
 
 	}
 
-	/*
-	@RequestMapping(path = "/phoneAlert", method = RequestMethod.GET)
-	public String getPhonesByStationNumber(@RequestParam int stationNumber) {
-		System.out.println("station number: " + stationNumber);
-		String phonesByStationNumber = urlsService.getPhonesByStationNumber(stationNumber);
-		
-		logHttpResponse(phonesByStationNumber);
-		
-		return phonesByStationNumber;
-
-	}
-	*/
 	
 	@RequestMapping(path = "/phoneAlert", method = RequestMethod.GET)
 	public String getPhoneAlert(@RequestParam int firestation) {
-		//System.out.println("station number: " + firestation);
 		String result = urlsService.getPhoneAlert(firestation);
+		logHttpResponse(result);
 		return result;
 
 	}
@@ -79,6 +69,7 @@ public class MainController {
 	@RequestMapping(path = "/fire", method = RequestMethod.GET)
 	public String getFire(@RequestParam String address) {
 		String result = urlsService.getFire(address);
+		logHttpResponse(result);
 		return result;
 	}
 
@@ -86,6 +77,7 @@ public class MainController {
 	public String getFloodStations(@RequestParam List<Integer> stations) {
 
 		String result = urlsService.getFloodStations(stations);
+		logHttpResponse(result);
 		return result;
 
 	}
@@ -93,6 +85,7 @@ public class MainController {
 	@RequestMapping(path = "/personInfo", method = RequestMethod.GET)
 	public String getPersonInfo(@RequestParam String firstName, @RequestParam String lastName) {
 		String result = urlsService.getPersonInfo(firstName, lastName);
+		logHttpResponse(result);
 		return result;
 
 	}
@@ -101,25 +94,16 @@ public class MainController {
 	public String getCommunityEmail(@RequestParam String city) {
 
 		String result = urlsService.getCommunityEmail(city);
+		logHttpResponse(result);
 		return result;
 
 	}
 	
-
-	
-	
-	
-	/*
-	public String getJson(Object object) throws IOException {
-		ObjectMapper objectMapper = new ObjectMapper();
-		String json = objectMapper.writeValueAsString(object);
-		return json;
+	public void logHttpResponse(String returnedInfo) {
+		if (returnedInfo == null) {
+			logger.error(HttpStatus.NOT_FOUND);
+		} else {
+			logger.info(HttpStatus.FOUND);
+		}
 	}
-
-	public String getJson(List<Object> objects) throws IOException {
-		ObjectMapper objectMapper = new ObjectMapper();
-		String json = objectMapper.writeValueAsString(objects);
-		return json;
-	}
-	*/
 }

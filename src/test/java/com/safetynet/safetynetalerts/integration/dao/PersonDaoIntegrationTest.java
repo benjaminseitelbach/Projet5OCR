@@ -2,20 +2,25 @@ package com.safetynet.safetynetalerts.integration.dao;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
+import org.junit.jupiter.api.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.safetynet.safetynetalerts.dao.PersonDao;
+import com.safetynet.safetynetalerts.dao.IPersonRepository;
 import com.safetynet.safetynetalerts.integration.service.DataBasePrepareService;
 import com.safetynet.safetynetalerts.model.Person;
 
 @SpringBootTest
+@TestMethodOrder(OrderAnnotation.class)
 public class PersonDaoIntegrationTest {
 
 	@Autowired
-	private PersonDao personDao;
+	private IPersonRepository iPersonRepository;
 	
 	private static DataBasePrepareService dataBasePrepareService;
 	
@@ -31,7 +36,13 @@ public class PersonDaoIntegrationTest {
 		lastNameTest = "LastNameTest";
 	}
 	
+	@AfterAll
+	private static void tearDown() {
+		dataBasePrepareService.clearDataBaseEntries();
+	}
+	
 	@Test
+	@Order(1)
 	public void savePersonIT() {
 		Person person = new Person();
 		person.setFirstName(firstNameTest);
@@ -42,7 +53,7 @@ public class PersonDaoIntegrationTest {
 		person.setPhone("PhoneTest");
 		person.setEmail("EmailTest");
 		
-		personDao.savePerson(person);
+		iPersonRepository.savePerson(person);
 		
 		Person personFound = dataBasePrepareService.findPerson(firstNameTest, lastNameTest);
 		
@@ -54,6 +65,7 @@ public class PersonDaoIntegrationTest {
 	}
 	
 	@Test
+	@Order(2)
 	public void updatePersonIT() {
 		Person person = new Person();
 		person.setFirstName(firstNameTest);
@@ -64,7 +76,7 @@ public class PersonDaoIntegrationTest {
 		person.setPhone("NewPhoneTest");
 		person.setEmail("NewEmailTest");
 		
-		personDao.updatePerson(person);
+		iPersonRepository.updatePerson(person);
 		
 		Person personFound = dataBasePrepareService.findPerson(firstNameTest, lastNameTest);
 		
@@ -76,9 +88,10 @@ public class PersonDaoIntegrationTest {
 	}
 	
 	@Test
+	@Order(3)
 	public void deletePersonIT() {
 
-		personDao.deletePerson(firstNameTest, lastNameTest);
+		iPersonRepository.deletePerson(firstNameTest, lastNameTest);
 		
 		Person personFound = dataBasePrepareService.findPerson(firstNameTest, lastNameTest);
 		

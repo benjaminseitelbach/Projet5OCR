@@ -24,20 +24,12 @@ public class PersonControllerTest {
 	@Autowired
 	private MockMvc mockMvc;
 	
-	//@MockBean
-	//private IPersonRepository iPersonRepository;
-	
 	@MockBean
 	private PersonService personService;
 	
 	@BeforeEach
 	private void setUpPerTest() {
-		//personService = new PersonService();
-		/*
-		try {
-			when(iPersonRepository.savePerson(any(Person.class)))
-		}
-		*/
+		
 	}
 	
 	@Test
@@ -51,7 +43,8 @@ public class PersonControllerTest {
 	    		content(person).
 	    		characterEncoding("utf-8"))
 				//.andExpect(status().isCreated()).andReturn();
-	    		.andExpect(status().isOk()).andReturn();
+	    		.andExpect(status().isCreated())
+	    		.andReturn();
 	    		
 	}
 	
@@ -64,9 +57,11 @@ public class PersonControllerTest {
 	    mockMvc.perform(put("/person").
 	    		contentType(MediaType.APPLICATION_JSON).
 	    		content(person).characterEncoding("utf-8"))
-	    		.andExpect(status().isOk()).andReturn();
+	    		.andExpect(status().isCreated())
+	    		.andReturn();
 	    		
 	}
+	
 	
 	@Test
 	public void testDeletePerson() throws Exception {
@@ -79,12 +74,15 @@ public class PersonControllerTest {
 	    		characterEncoding("utf-8"));
 	    
 	    //WHEN, THEN
-	    mockMvc.perform(delete("/person/{firstName}{lastName}", "newFirstName", "newLastName").
-	    		contentType(MediaType.APPLICATION_JSON).
-	    		characterEncoding("utf-8"))
-	    		.andExpect(status().isOk()).andReturn();
+	    mockMvc.perform(delete("/person")
+	    		.contentType(MediaType.APPLICATION_JSON)
+	    		.content(person)
+	    		.characterEncoding("utf-8"))
+	    		.andExpect(status().isOk())
+	    		.andReturn();
 	    		
 	}
+	
 	
 	
 }

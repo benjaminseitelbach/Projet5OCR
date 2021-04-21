@@ -46,47 +46,54 @@ public class FirestationControllerTest {
 	    String firestation = "{ \"address\":\"addressTest\",\"station\":5}";
 	      
 	    //WHEN, THEN
-	    mockMvc.perform(post("/firestation").
-	    		contentType(MediaType.APPLICATION_JSON).
-	    		content(firestation).
-	    		characterEncoding("utf-8"))
-				//.andExpect(status().isCreated()).andReturn();
-	    		.andExpect(status().isOk()).andReturn();
+	    mockMvc.perform(post("/firestation")
+	    		.contentType(MediaType.APPLICATION_JSON)
+	    		.content(firestation)
+	    		.characterEncoding("utf-8"))
+				.andExpect(status().isCreated()).andReturn();
 	    		
 	}
 	
 	@Test
 	public void testPutFirestation() throws Exception {
 		//GIVEN
-	    String firestation = "{ \"address\":\"addressTest\",\"station\":6}";
+	    String firestation1 = "{ \"address\":\"addressTest\",\"station\":5}";
+	    String firestation2 = "{ \"address\":\"addressTest\",\"station\":6}";
+	    
+	    mockMvc.perform(post("/firestation")
+	    		.contentType(MediaType.APPLICATION_JSON)
+	    		.content(firestation1)
+	    		.characterEncoding("utf-8"));
+	    
 	      
 	    //WHEN, THEN
-	    mockMvc.perform(put("/firestation").
-	    		contentType(MediaType.APPLICATION_JSON).
-	    		content(firestation).characterEncoding("utf-8"))
-	    		.andExpect(status().isOk()).andReturn();
+	    mockMvc.perform(put("/firestation")
+	    		.contentType(MediaType.APPLICATION_JSON)
+	    		.content(firestation2).characterEncoding("utf-8"))
+	    		.andExpect(status().isCreated()).andReturn();
 	    		
 	}
 	
-	/*
+	
 	@Test
 	public void testDeleteFirestation() throws Exception {
 		//GIVEN
 	    String firestation = "{ \"address\":\"addressTest\",\"station\":6}";
 	     
-	    mockMvc.perform(post("/firestation").
-	    		contentType(MediaType.APPLICATION_JSON).
-	    		content(firestation).
-	    		characterEncoding("utf-8"));
+	    mockMvc.perform(post("/firestation")
+	    		.contentType(MediaType.APPLICATION_JSON)
+	    		.content(firestation)
+	    		.characterEncoding("utf-8"));
 	    
 	    //WHEN, THEN
-	    mockMvc.perform(delete("/firestation/{firstName}{lastName}", "newFirstName", "newLastName").
-	    		contentType(MediaType.APPLICATION_JSON).
-	    		characterEncoding("utf-8"))
+	    mockMvc.perform(delete("/firestation")
+	    		.contentType(MediaType.APPLICATION_JSON)
+	    		.content(firestation)
+	    		.characterEncoding("utf-8"))
 	    		.andExpect(status().isOk()).andReturn();
 	    		
 	}
-	*/
+	
 	
 	
 }

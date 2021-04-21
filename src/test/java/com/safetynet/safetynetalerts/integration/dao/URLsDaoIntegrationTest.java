@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.safetynet.safetynetalerts.dao.URLsDao;
+import com.safetynet.safetynetalerts.dao.IURLsRepository;
 import com.safetynet.safetynetalerts.init.Initialization;
 import com.safetynet.safetynetalerts.integration.service.DataBasePrepareService;
 
@@ -20,7 +20,7 @@ import com.safetynet.safetynetalerts.integration.service.DataBasePrepareService;
 public class URLsDaoIntegrationTest {
 	
 	@Autowired
-	private URLsDao urlsDao;
+	private IURLsRepository iURLsRepository;
 	
 	private static DataBasePrepareService dataBasePrepareService;
 	
@@ -33,8 +33,8 @@ public class URLsDaoIntegrationTest {
 	}
 	
 	@Test
-	public void getPersonsByStationNumber1Test() throws Exception {
-		String jsonString = urlsDao.getPersonsByStationNumber(1);
+	public void getFirestationByStationNumber1Test() throws Exception {
+		String jsonString = iURLsRepository.getFirestation(1);
 		JSONObject json = new JSONObject(jsonString);
 		JSONArray personsArray = json.getJSONArray("persons");
 
@@ -47,7 +47,7 @@ public class URLsDaoIntegrationTest {
 	
 	@Test
 	public void getChildAlertByAddress1509CulverSt () throws Exception {
-		String jsonString = urlsDao.getChildsByAddress("1509 Culver St");
+		String jsonString = iURLsRepository.getChildAlert("1509 Culver St");
 		JSONObject json = new JSONObject(jsonString);
 		JSONArray childsArray = json.getJSONArray("childs");
 		assertEquals(2, childsArray.length());
@@ -56,16 +56,16 @@ public class URLsDaoIntegrationTest {
 	}
 	
 	@Test
-	public void getPhoneAlertByStation1 () throws Exception {
-		String jsonString = urlsDao.getPhonesByStationNumber(1);
+	public void getPhoneAlertByFirestation1 () throws Exception {
+		String jsonString = iURLsRepository.getPhoneAlert(1);
 		JSONObject json = new JSONObject(jsonString);
 		JSONArray phonesArray = json.getJSONArray("phones");
 		assertEquals(phonesArray.length(), 6);			
 	}
 	
 	@Test
-	public void getPersonsByAddress1509CulverSt () throws Exception {
-		String jsonString = urlsDao.getPersonsByAddress("1509 Culver St");
+	public void getFireByAddress1509CulverSt () throws Exception {
+		String jsonString = iURLsRepository.getFire("1509 Culver St");
 		JSONObject json = new JSONObject(jsonString);
 		JSONArray personsArray = json.getJSONArray("persons");
 		assertEquals(personsArray.length(), 5);			
@@ -74,11 +74,11 @@ public class URLsDaoIntegrationTest {
 	}
 	
 	@Test
-	public void getPersonsByStations1And2 () throws Exception {
+	public void getFloodByStations1And2 () throws Exception {
 		List<Integer> stations = new ArrayList<>();
 		stations.add(1);
 		stations.add(2);
-		String jsonString = urlsDao.getPersonsByStations(stations);
+		String jsonString = iURLsRepository.getFloodStations(stations);
 		JSONObject json = new JSONObject(jsonString);
 		JSONArray addressesArray = json.getJSONArray("addresses");
 		assertEquals(addressesArray.length(), 6); 		
@@ -86,7 +86,7 @@ public class URLsDaoIntegrationTest {
 	
 	@Test
 	public void getPersonInfoJohnBoyd () throws Exception {
-		String jsonString = urlsDao.getPersonInfo("John", "Boyd");
+		String jsonString = iURLsRepository.getPersonInfo("John", "Boyd");
 		JSONObject json = new JSONObject(jsonString);
 		assertEquals(json.getString("firstname"), "John");
 		assertEquals(json.getString("lastname"), "Boyd");
@@ -96,8 +96,8 @@ public class URLsDaoIntegrationTest {
 	}
 	
 	@Test
-	public void getEmailsByCityCulver () throws Exception {
-		String jsonString = urlsDao.getEmailsByCity("Culver");
+	public void getCommunityEmailByCityCulver () throws Exception {
+		String jsonString = iURLsRepository.getCommunityEmail("Culver");
 		JSONObject json = new JSONObject(jsonString);
 		JSONArray emailsArray = json.getJSONArray("emails");
 		assertEquals(emailsArray.length(), 23);

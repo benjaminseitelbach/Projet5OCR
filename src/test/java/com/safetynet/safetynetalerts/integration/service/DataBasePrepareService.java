@@ -64,16 +64,16 @@ public class DataBasePrepareService {
         			+ " FIRST_NAME = '" + firstName + "' AND LAST_NAME = '" + lastName + "'");
             
         	ResultSet rs = ps.executeQuery();
-        	rs.next();
-
-        	person.setFirstName(rs.getString(1));
-        	person.setLastName(rs.getString(2));
-        	person.setAddress(rs.getString(3));
-        	person.setCity(rs.getString(4));
-        	person.setZip(rs.getString(5));
-        	person.setPhone(rs.getString(6));
-        	person.setEmail(rs.getString(7));
-            
+        	if(rs.next()) {
+        		person.setFirstName(rs.getString(1));
+            	person.setLastName(rs.getString(2));
+            	person.setAddress(rs.getString(3));
+            	person.setCity(rs.getString(4));
+            	person.setZip(rs.getString(5));
+            	person.setPhone(rs.getString(6));
+            	person.setEmail(rs.getString(7));
+        	}
+        
         }catch (Exception e){
             e.printStackTrace();
         }finally {
@@ -122,12 +122,14 @@ public class DataBasePrepareService {
         			+ " FIRST_NAME = '" + firstName + "' AND LAST_NAME = '" + lastName + "'");
             
         	ResultSet rs = ps.executeQuery();
-        	rs.next();
-        	medicalRecord.setFirstName(rs.getString(1));
-        	medicalRecord.setLastName(rs.getString(2));
-        	medicalRecord.setBirthDate(rs.getString(3));
-        	medicalRecord.setMedications(findMedications(id));
-        	medicalRecord.setAllergies(findAllergies(id));
+        	if(rs.next()) {
+        		medicalRecord.setFirstName(rs.getString(1));
+            	medicalRecord.setLastName(rs.getString(2));
+            	medicalRecord.setBirthDate(rs.getString(3));
+            	medicalRecord.setMedications(findMedications(id));
+            	medicalRecord.setAllergies(findAllergies(id));
+        	}
+        	
             
         }catch (Exception e){
             e.printStackTrace();

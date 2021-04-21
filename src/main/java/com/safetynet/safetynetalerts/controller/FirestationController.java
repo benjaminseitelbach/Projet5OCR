@@ -22,26 +22,64 @@ import com.safetynet.safetynetalerts.service.FirestationService;
 @RequestMapping("/firestation")
 public class FirestationController {
 
-	//private static final Logger logger = LogManager.getLogger("FirestationController");
+	private static final Logger logger = LogManager.getLogger("FirestationController");
 	
 	@Autowired
 	private FirestationService firestationService;
 	
 	@PostMapping
 	public ResponseEntity<Void> addFirestation(@RequestBody Firestation firestation) {
-		ResponseEntity<Void> response = firestationService.saveFirestation(firestation);
+		
+		ResponseEntity<Void> response;
+		
+		try {
+			//Person savedPerson = personService.savePerson(person);
+			firestationService.saveFirestation(firestation);
+			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{address}{station}")
+					.buildAndExpand(firestation.getAddress(), firestation.getStation()).toUri();
+			response = ResponseEntity.created(location).build();
+			logger.info(response);
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			response = ResponseEntity.badRequest().build();
+			logger.error(response);
+		}
 		return response;	
 	}
 	
 	@PutMapping
 	public ResponseEntity<Void> updateFirestation(@RequestBody Firestation firestation) {
-		ResponseEntity<Void> response = firestationService.updateFirestation(firestation);
+		ResponseEntity<Void> response;
+		
+		try {
+			firestationService.updateFirestation(firestation);
+			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{address}{station}")
+					.buildAndExpand(firestation.getAddress(), firestation.getStation()).toUri();
+			response = ResponseEntity.created(location).build();
+			logger.info(response);
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			response = ResponseEntity.badRequest().build();
+			logger.error(response);
+		}
 		return response;
 	}
 
 	@DeleteMapping
 	public ResponseEntity<Void> deleteFirestation(@RequestBody Firestation firestation) {
-		ResponseEntity<Void> response = firestationService.deleteFirestation(firestation);
+		ResponseEntity<Void> response;
+		
+		try {
+			response = ResponseEntity.status(200).build();
+			logger.info(response);
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			response = ResponseEntity.badRequest().build();
+			logger.error(response);
+		}
 		return response;
 	}
 }

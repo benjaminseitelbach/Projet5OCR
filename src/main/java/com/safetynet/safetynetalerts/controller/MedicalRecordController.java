@@ -22,26 +22,66 @@ import com.safetynet.safetynetalerts.service.MedicalRecordService;
 @RequestMapping("/medicalrecord")
 public class MedicalRecordController {
 
-	//private static final Logger logger = LogManager.getLogger("MedicalRecordController");
+	private static final Logger logger = LogManager.getLogger("MedicalRecordController");
 	
 	@Autowired
 	private MedicalRecordService medicalRecordService;
 	
 	@PostMapping
 	public ResponseEntity<Void> saveMedicalRecord(@RequestBody MedicalRecord medicalRecord) {
-		ResponseEntity<Void> response = medicalRecordService.saveMedicalRecord(medicalRecord);
+		ResponseEntity<Void> response;
+		
+		try {
+			medicalRecordService.saveMedicalRecord(medicalRecord);
+			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}{lastName}")
+					.buildAndExpand(medicalRecord.getFirstName(), medicalRecord.getLastName()).toUri();
+			response = ResponseEntity.created(location).build();
+			logger.info(response);
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			response = ResponseEntity.badRequest().build();
+			logger.error(response);
+		}
 		return response;
 	}
 	
 	@PutMapping
 	public ResponseEntity<Void> updateMedicalRecord(@RequestBody MedicalRecord medicalRecord) {
-		ResponseEntity<Void> response = medicalRecordService.updateMedicalRecord(medicalRecord);
+		ResponseEntity<Void> response;
+		
+		try {
+
+			medicalRecordService.saveMedicalRecord(medicalRecord);
+			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}{lastName}")
+					.buildAndExpand(medicalRecord.getFirstName(), medicalRecord.getLastName()).toUri();
+			response = ResponseEntity.created(location).build();
+			logger.info(response);
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			response = ResponseEntity.badRequest().build();
+			logger.error(response);
+		}
 		return response;
 	}
 
 	@DeleteMapping
-	public ResponseEntity<Void> deleteMedicalRecord(@RequestParam String firstName, @RequestParam String lastName) {
-		ResponseEntity<Void> response = medicalRecordService.deleteMedicalRecord(firstName, lastName);
+	public ResponseEntity<Void> deleteMedicalRecord(@RequestBody MedicalRecord medicalRecord) {
+		ResponseEntity<Void> response;
+		
+		try {
+
+			medicalRecordService.saveMedicalRecord(medicalRecord);
+
+			response = ResponseEntity.status(200).build();
+			logger.info(response);
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			response = ResponseEntity.badRequest().build();
+			logger.error(response);
+		}
 		return response;
 	}
 }

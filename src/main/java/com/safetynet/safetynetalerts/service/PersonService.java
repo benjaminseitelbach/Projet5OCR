@@ -11,6 +11,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.safetynet.safetynetalerts.dao.IPersonRepository;
 import com.safetynet.safetynetalerts.dao.PersonRepository;
+import com.safetynet.safetynetalerts.exception.MissingEntityException;
 import com.safetynet.safetynetalerts.model.Person;
 
 @Service
@@ -18,66 +19,37 @@ public class PersonService {
 
 	private static final Logger logger = LogManager.getLogger("PersonService");
 	
-	//@Autowired
-	private PersonRepository personRepository = new PersonRepository();
+	@Autowired
+	private IPersonRepository iPersonRepository;
 
-	public ResponseEntity<Void> savePerson(Person person) {
-		Person savedPerson = personRepository.savePerson(person);
+	public Person savePerson(Person person) throws Exception {
+		Person savedPerson = new Person();
+		if(person != null) {
+			savedPerson = iPersonRepository.savePerson(person);
+
+		} else {
+			throw new MissingEntityException();
+		}
+		return savedPerson;
 		
-		ResponseEntity<Void> response;
-		if (savedPerson != null) {
-			
-			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}{lastName}")
-					.buildAndExpand(person.getFirstName(), person.getLastName()).toUri();
-			response = ResponseEntity.created(location).build();
-
-			logger.info(response);
-
-			return response;
-
+	}
+	
+	public Person updatePerson(Person person) throws Exception {
+		if(person != null) {
+			Person updatedPerson = iPersonRepository.updatePerson(person);
+			return updatedPerson;
 		} else {
-			response = ResponseEntity.noContent().build();
-			logger.error(response);
-
-			return response;
+			throw new MissingEntityException();
 		}
 	}
 	
-	public ResponseEntity<Void> updatePerson(Person person) {
-		Person updatedPerson = iPersonRepository.updatePerson(person);
-		ResponseEntity<Void> response;
-		if (updatedPerson != null) {
-
-			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}{lastName}")
-					.buildAndExpand(updatedPerson.getFirstName(), person.getLastName()).toUri();
-			response = ResponseEntity.created(location).build();
-
-			logger.info(response);
-			return response;
+	public Person deletePerson(Person person) throws Exception {
+		
+		if(person != null) {
+			Person deletedPerson = iPersonRepository.deletePerson(person.getFirstName(), person.getLastName());
+			return deletedPerson;
 		} else {
-			response = ResponseEntity.noContent().build();
-			logger.error(response);
-
-			return response;
-		}
-	}
-	
-	public ResponseEntity<Void> deletePerson(String firstName, String lastName) {
-		Person deletedPerson = iPersonRepository.deletePerson(firstName, lastName);
-		ResponseEntity<Void> response;
-		if (deletedPerson != null) {
-
-			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}{lastName}")
-					.buildAndExpand(deletedPerson.getFirstName(), deletedPerson.getLastName()).toUri();
-			response = ResponseEntity.created(location).build();
-
-			logger.info(response);
-			return response;
-		} else {
-			response = ResponseEntity.noContent().build();
-			logger.error(response);
-
-			return response;
+			throw new MissingEntityException();
 		}
 	}
 }

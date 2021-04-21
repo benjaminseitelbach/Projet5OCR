@@ -7,8 +7,10 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.safetynet.safetynetalerts.dao.IPersonRepository;
 import com.safetynet.safetynetalerts.dao.PersonRepository;
@@ -23,15 +25,15 @@ public class PersonServiceTest {
 	
 	private static PersonService personService;
 	
-	@Mock
-	//@Autowired
-	//private static IPersonRepository iPersonRepository;
-	private static PersonRepository personRepository;
+	@MockBean
+	@Autowired
+	private static IPersonRepository iPersonRepository;
+	//private static PersonRepository personRepository;
 	
 	@BeforeEach
 	private void setUpPerTest() {
 		personService = new PersonService();
-		personRepository = new PersonRepository();
+		//personRepository = new PersonRepository();
 		/*
 		try {
 			when(iPersonRepository.savePerson(any(Person.class)))
@@ -39,6 +41,7 @@ public class PersonServiceTest {
 		*/
 	}
 	
+	/*
 	@Test
 	public void savePersonTest() {
 		Person person = new Person();
@@ -50,21 +53,19 @@ public class PersonServiceTest {
 		person.setPhone("PhoneTest");
 		person.setEmail("EmailTest");
 		
+		Person savedPerson = new Person();
 		try {
-			//when(personRepository.savePerson(any(Person.class))).thenReturn(person);
-			when(personRepository.savePerson(person)).thenReturn(person);
-			
-			URI location = new URI("localhost:8080/person/FirstNameTestLastNameTest");
-			when(ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}{lastName}")
-					.buildAndExpand(person.getFirstName(), person.getLastName()).toUri())
-					.thenReturn(location);
+			//when(personRepository.savePerson(person)).thenReturn(person);
+			savedPerson = personService.savePerson(person);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		ResponseEntity<Void> response = personService.savePerson(person);
 		
-		System.out.println(response);
+		
+		assertEquals(person.getFirstName(),savedPerson.getFirstName());
 		
 	}
+	*/
+	
 }

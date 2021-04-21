@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.safetynet.safetynetalerts.dao.IMedicalRecordRepository;
+import com.safetynet.safetynetalerts.exception.MissingEntityException;
 import com.safetynet.safetynetalerts.model.MedicalRecord;
 
 @Service
@@ -20,63 +21,36 @@ public class MedicalRecordService {
 	@Autowired
 	private IMedicalRecordRepository iMedicalRecordRepository;
 
-	public ResponseEntity<Void> saveMedicalRecord(MedicalRecord MedicalRecord) {
-		MedicalRecord savedMedicalRecord = iMedicalRecordRepository.saveMedicalRecord(MedicalRecord);
-		
-		ResponseEntity<Void> response;
-		if (savedMedicalRecord != null) {
-			
-			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}{lastName}")
-					.buildAndExpand(MedicalRecord.getFirstName(), MedicalRecord.getLastName()).toUri();
-			response = ResponseEntity.created(location).build();
-
-			logger.info(response);
-
-			return response;
+	public MedicalRecord saveMedicalRecord(MedicalRecord medicalRecord) throws Exception {
+		MedicalRecord savedMedicalRecord = new MedicalRecord();
+		if(medicalRecord != null) {
+			savedMedicalRecord = iMedicalRecordRepository.saveMedicalRecord(medicalRecord);
 
 		} else {
-			response = ResponseEntity.noContent().build();
-			logger.error(response);
-
-			return response;
+			throw new MissingEntityException();
 		}
+		return savedMedicalRecord;
 	}
 	
-	public ResponseEntity<Void> updateMedicalRecord(MedicalRecord MedicalRecord) {
-		MedicalRecord updatedMedicalRecord = iMedicalRecordRepository.updateMedicalRecord(MedicalRecord);
-		ResponseEntity<Void> response;
-		if (updatedMedicalRecord != null) {
+	public MedicalRecord updateMedicalRecord(MedicalRecord medicalRecord) throws Exception {
+		MedicalRecord savedMedicalRecord = new MedicalRecord();
+		if(medicalRecord != null) {
+			savedMedicalRecord = iMedicalRecordRepository.updateMedicalRecord(medicalRecord);
 
-			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}{lastName}")
-					.buildAndExpand(updatedMedicalRecord.getFirstName(), MedicalRecord.getLastName()).toUri();
-			response = ResponseEntity.created(location).build();
-
-			logger.info(response);
-			return response;
 		} else {
-			response = ResponseEntity.noContent().build();
-			logger.error(response);
-
-			return response;
+			throw new MissingEntityException();
 		}
+		return savedMedicalRecord;
 	}
 	
-	public ResponseEntity<Void> deleteMedicalRecord(String firstName, String lastName) {
-		MedicalRecord deletedMedicalRecord = iMedicalRecordRepository.deleteMedicalRecord(firstName, lastName);
-		ResponseEntity<Void> response;
-		if (deletedMedicalRecord != null) {
+	public MedicalRecord deleteMedicalRecord(MedicalRecord medicalRecord) throws Exception {
+		MedicalRecord savedMedicalRecord = new MedicalRecord();
+		if(medicalRecord != null) {
+			savedMedicalRecord = iMedicalRecordRepository.deleteMedicalRecord(medicalRecord.getFirstName(), medicalRecord.getLastName());
 
-			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}{lastName}")
-					.buildAndExpand(deletedMedicalRecord.getFirstName(), deletedMedicalRecord.getLastName()).toUri();
-			response = ResponseEntity.created(location).build();
-
-			logger.info(response);
-			return response;
 		} else {
-			response = ResponseEntity.noContent().build();
-			logger.error(response);
-
-			return response;
+			throw new MissingEntityException();
 		}
+		return savedMedicalRecord;
 	}
 }

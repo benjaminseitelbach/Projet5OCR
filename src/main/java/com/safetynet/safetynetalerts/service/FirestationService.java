@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.safetynet.safetynetalerts.dao.IFirestationRepository;
+import com.safetynet.safetynetalerts.exception.MissingEntityException;
 import com.safetynet.safetynetalerts.model.Firestation;
 
 @Service
@@ -20,66 +21,38 @@ public class FirestationService {
 	@Autowired
 	private IFirestationRepository iFirestationRepository;
 	
-	public ResponseEntity<Void> saveFirestation(Firestation firestation) {
-		Firestation savedFirestation = iFirestationRepository.saveFirestation(firestation);
-		
-		ResponseEntity<Void> response;
-		if (savedFirestation != null) {
-			
-			//TODO PATH A CHECK
-			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{address}{station}")
-					.buildAndExpand(savedFirestation.getAddress(), savedFirestation.getStation()).toUri();
-			response = ResponseEntity.created(location).build();
-			
-			logger.info(response);
-			return response;
-		} else {
-			response = ResponseEntity.noContent().build();
-			logger.error(response);
+	public Firestation saveFirestation(Firestation firestation) throws Exception {
+		Firestation savedfirestation = new Firestation();
+		if(firestation != null) {
+			savedfirestation = iFirestationRepository.saveFirestation(firestation);
 
-			return response;
+		} else {
+			throw new MissingEntityException();
 		}
+		return savedfirestation;
 	}
 	
-	public ResponseEntity<Void> updateFirestation(Firestation firestation) {
-		Firestation updatedFirestation = iFirestationRepository.updateFirestation(firestation);
-		
-		ResponseEntity<Void> response;
-		if (updatedFirestation != null) {
-			
-			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{address}{station}")
-					.buildAndExpand(updatedFirestation.getAddress(), updatedFirestation.getStation()).toUri();
-			response = ResponseEntity.created(location).build();
-			
-			logger.info(response);
-			return response;
-		} else {
-			response = ResponseEntity.noContent().build();
-			logger.error(response);
+	public Firestation updateFirestation(Firestation firestation) throws Exception {
+		Firestation savedfirestation = new Firestation();
+		if(firestation != null) {
+			savedfirestation = iFirestationRepository.updateFirestation(firestation);
 
-			return response;
+		} else {
+			throw new MissingEntityException();
 		}
+		return savedfirestation;
 	}
 	
-	/*
-	public ResponseEntity<Void> deleteFirestation(Firestation firestation) {
-		Firestation deletedFirestation = iFirestationRepository.deleteFirestation(firestation);
-		
-		ResponseEntity<Void> response;
-		if (deletedFirestation != null) {
-			
-			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{address}{station}")
-					.buildAndExpand(deletedFirestation.getAddress() , deletedFirestation.getStation()).toUri();
-			response = ResponseEntity.created(location).build();
-			
-			logger.info(response);
-			return response;
-		} else {
-			response = ResponseEntity.noContent().build();
-			logger.error(response);
+	
+	public Firestation deleteFirestation(Firestation firestation) throws Exception {
+		Firestation savedfirestation = new Firestation();
+		if(firestation != null) {
+			savedfirestation = iFirestationRepository.deleteFirestation(firestation);
 
-			return response;
+		} else {
+			throw new MissingEntityException();
 		}
+		return savedfirestation;
 	}
-	*/
+	
 }

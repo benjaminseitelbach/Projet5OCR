@@ -30,15 +30,6 @@ public class MedicalRecordControllerTest {
 	@MockBean
 	private MedicalRecordService MedicalRecordService;
 	
-	@BeforeEach
-	private void setUpPerTest() {
-		//MedicalRecordService = new MedicalRecordService();
-		/*
-		try {
-			when(iMedicalRecordRepository.saveMedicalRecord(any(MedicalRecord.class)))
-		}
-		*/
-	}
 	
 	@Test
 	public void testPostMedicalRecord() throws Exception {
@@ -46,12 +37,12 @@ public class MedicalRecordControllerTest {
 	    String medicalRecord = "{ \"firstName\":\"newFirstName\",\"lastName\":\"newLastName\"}";
 	      
 	    //WHEN, THEN
-	    mockMvc.perform(post("/medicalRecord").
-	    		contentType(MediaType.APPLICATION_JSON).
-	    		content(medicalRecord).
-	    		characterEncoding("utf-8"))
-				//.andExpect(status().isCreated()).andReturn();
-	    		.andExpect(status().isOk()).andReturn();
+	    mockMvc.perform(post("/medicalrecord")
+	    		.contentType(MediaType.APPLICATION_JSON)
+	    		.content(medicalRecord)
+	    		.characterEncoding("utf-8"))
+				.andExpect(status().isCreated()).andReturn();
+
 	    		
 	}
 	
@@ -59,34 +50,41 @@ public class MedicalRecordControllerTest {
 	public void testPutMedicalRecord() throws Exception {
 		//GIVEN
 	    String medicalRecord = "{ \"firstName\":\"newFirstName\",\"lastName\":\"newLastName\"}";
-	      
+	     
+	    mockMvc.perform(post("/medicalrecord")
+	    		.contentType(MediaType.APPLICATION_JSON)
+	    		.content(medicalRecord)
+	    		.characterEncoding("utf-8"));
+	    
 	    //WHEN, THEN
-	    mockMvc.perform(put("/medicalRecord").
-	    		contentType(MediaType.APPLICATION_JSON).
-	    		content(medicalRecord).characterEncoding("utf-8"))
-	    		.andExpect(status().isOk()).andReturn();
+	    mockMvc.perform(put("/medicalrecord")
+	    		.contentType(MediaType.APPLICATION_JSON)
+	    		.content(medicalRecord).characterEncoding("utf-8"))
+	    		.andExpect(status().isCreated()).andReturn();
 	    		
 	}
 	
-	/*
+	
+	
 	@Test
 	public void testDeleteMedicalRecord() throws Exception {
 		//GIVEN
 	    String medicalRecord = "{ \"firstName\":\"newFirstName\",\"lastName\":\"newLastName\"}";
 	     
-	    mockMvc.perform(post("/MedicalRecord").
-	    		contentType(MediaType.APPLICATION_JSON).
-	    		content(medicalRecord).
-	    		characterEncoding("utf-8"));
+	    mockMvc.perform(post("/medicalrecord")
+	    		.contentType(MediaType.APPLICATION_JSON)
+	    		.content(medicalRecord)
+	    		.characterEncoding("utf-8"));
 	    
 	    //WHEN, THEN
-	    mockMvc.perform(delete("/medicalRecord/{firstName}{lastName}", "newFirstName", "newLastName").
-	    		contentType(MediaType.APPLICATION_JSON).
-	    		characterEncoding("utf-8"))
+	    mockMvc.perform(delete("/medicalrecord")
+	    		.contentType(MediaType.APPLICATION_JSON)
+	    		.content(medicalRecord)
+	    		.characterEncoding("utf-8"))
 	    		.andExpect(status().isOk()).andReturn();
 	    		
 	}
-	*/
+	
 	
 	
 }

@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Order;
@@ -40,8 +41,12 @@ public class PersonControllerIntegrationTest {
 		firstNameTest = "FirstNameTest";
 		lastNameTest = "LastNameTest";
 	}
-
 	
+	@AfterAll
+	private static void tearDown() {
+		dataBasePrepareService.clearDataBaseEntries();
+	}
+
 	@Test
 	@Order(1)
 	public void savePersonIT() throws Exception {
@@ -61,33 +66,10 @@ public class PersonControllerIntegrationTest {
 
 	}
 
-	
-	@Test 
-	@Order(2)
-	public void updatePersonIT() throws Exception{ 
-			
-	  Person person = new Person(); 
-	  person.setFirstName(firstNameTest);
-	  person.setLastName(lastNameTest); 
-	  person.setAddress("NewAddressTest");
-	  person.setCity("NewCityTest"); 
-	  person.setZip("NewZipTest");
-	  person.setPhone("NewPhoneTest"); 
-	  person.setEmail("NewEmailTest");
-	  
-	  //WHEN, THEN 
-	  mockMvc.perform(
-	  put("/person").contentType(MediaType.APPLICATION_JSON).content(person.toJson()).characterEncoding("utf-8"))
-	  	.andExpect(status().isOk()).andReturn();
-	  
-	  
-	}
-
 	@Test
-	@Order(3)
-	public void deletePersonIT() throws Exception {
-		// GIVEN
-		/*
+	@Order(2)
+	public void updatePersonIT() throws Exception {
+
 		Person person = new Person();
 		person.setFirstName(firstNameTest);
 		person.setLastName(lastNameTest);
@@ -96,12 +78,25 @@ public class PersonControllerIntegrationTest {
 		person.setZip("NewZipTest");
 		person.setPhone("NewPhoneTest");
 		person.setEmail("NewEmailTest");
-		*/	
+
 		// WHEN, THEN
-		mockMvc.perform(delete("/person/FirstNameTestLastNameTest").contentType(MediaType.APPLICATION_JSON))
-			//.accept(MediaType.APPLICATION_JSON))
-			.andExpect(status().isOk()).andReturn();
+		mockMvc.perform(put("/person").contentType(MediaType.APPLICATION_JSON).content(person.toJson())
+				.characterEncoding("utf-8")).andExpect(status().isCreated()).andReturn();
+
 	}
-	
+
+	@Test
+	@Order(3)
+	public void deletePersonIT() throws Exception {
+		// GIVEN
+		Person person = new Person();
+		person.setFirstName(firstNameTest);
+		person.setLastName(lastNameTest);
+
+		// WHEN, THEN
+		mockMvc.perform(
+				delete("/person").contentType(MediaType.APPLICATION_JSON).content(person.toJson()).characterEncoding("utf-8"))
+				.andExpect(status().isOk()).andReturn();
+	}
 
 }

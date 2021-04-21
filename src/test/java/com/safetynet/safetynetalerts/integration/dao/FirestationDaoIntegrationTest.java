@@ -2,22 +2,27 @@ package com.safetynet.safetynetalerts.integration.dao;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
+import org.junit.jupiter.api.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.safetynet.safetynetalerts.dao.FirestationDao;
-import com.safetynet.safetynetalerts.dao.PersonDao;
+import com.safetynet.safetynetalerts.dao.IFirestationRepository;
+
 import com.safetynet.safetynetalerts.integration.service.DataBasePrepareService;
 import com.safetynet.safetynetalerts.model.Firestation;
 import com.safetynet.safetynetalerts.model.Person;
 
 @SpringBootTest
+@TestMethodOrder(OrderAnnotation.class)
 public class FirestationDaoIntegrationTest {
 
 	@Autowired
-	private FirestationDao firestationDao;
+	private IFirestationRepository iFirestationRepository;
 	
 	private static DataBasePrepareService dataBasePrepareService;
 	
@@ -35,13 +40,19 @@ public class FirestationDaoIntegrationTest {
 		newStation = 6;
 	}
 	
+	@AfterAll
+	private static void tearDown() {
+		dataBasePrepareService.clearDataBaseEntries();
+	}
+	
 	@Test
+	@Order(1)
 	public void saveFirestationIT() {
 		Firestation firestation = new Firestation();
 		firestation.setAddress(addressTest);
 		firestation.setStation(stationTest);
 	
-		firestationDao.saveFirestation(firestation);
+		iFirestationRepository.saveFirestation(firestation);
 		
 		boolean firestationExists = dataBasePrepareService.firestationExists(addressTest, stationTest);
 		
@@ -49,12 +60,13 @@ public class FirestationDaoIntegrationTest {
 	}
 	
 	@Test
+	@Order(2)
 	public void updateFirestationIT() {
 		Firestation firestation = new Firestation();
 		firestation.setAddress(addressTest);		
 		firestation.setStation(newStation);
 		
-		firestationDao.updateFirestation(firestation);
+		iFirestationRepository.updateFirestation(firestation);
 		
 		boolean firestationExists = dataBasePrepareService.firestationExists(addressTest, newStation);
 		
@@ -62,12 +74,13 @@ public class FirestationDaoIntegrationTest {
 	}
 	
 	@Test
+	@Order(3)
 	public void deleteFirestationIT() {
 		Firestation firestation = new Firestation();
 		firestation.setAddress(addressTest);		
 		firestation.setStation(newStation);
 		
-		firestationDao.deleteFirestation(firestation);
+		iFirestationRepository.deleteFirestation(firestation);
 		
 		boolean firestationExists = false;/* dataBasePrepareService.firestationExists(addressTest, newStation);*/
 		
