@@ -19,8 +19,6 @@ public class DatesUtils {
 
 		Date today = new Date();
 		int todayDay = today.getDate();
-		
-		//TODO VERIFIER AGE FONCTIONNNE TOUJOURS AVEC AJOUT + 1 EN 2021
 		int todayMonth = today.getMonth() + 1;
 		int todayYear = today.getYear() + 1900;
 

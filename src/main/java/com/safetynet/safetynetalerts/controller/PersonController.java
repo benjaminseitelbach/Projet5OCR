@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
@@ -27,13 +26,12 @@ public class PersonController {
 	private PersonService personService;
 
 	@PostMapping
-	public ResponseEntity<Void> savePerson(/*@Valid */@RequestBody /* TODO @Valid NE FONCTIONNE PAS*/Person person) {
-		System.out.println("person before dao:" + person);
+	public ResponseEntity<Void> savePerson(@RequestBody Person person) {
 		
 		ResponseEntity<Void> response;
 		
 		try {
-			//Person savedPerson = personService.savePerson(person);
+
 			personService.savePerson(person);
 			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{firstName}{lastName}")
 					.buildAndExpand(person.getFirstName(), person.getLastName()).toUri();

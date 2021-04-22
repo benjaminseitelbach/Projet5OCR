@@ -13,7 +13,6 @@ import org.springframework.stereotype.Repository;
 import com.safetynet.safetynetalerts.config.DataBaseConfig;
 import com.safetynet.safetynetalerts.constants.DBConstants;
 import com.safetynet.safetynetalerts.model.MedicalRecord;
-import com.safetynet.safetynetalerts.model.Person;
 
 @Repository
 public class MedicalRecordRepository implements IMedicalRecordRepository {
@@ -29,16 +28,13 @@ public class MedicalRecordRepository implements IMedicalRecordRepository {
         try {
             con = dataBaseConfig.getConnection();
             ps = con.prepareStatement(DBConstants.SAVE_MEDICALRECORD);
-            //FIRST_NAME, LAST_NAME, ADDRESS, CITY, ZIP, PHONE, EMAIL
-            //int id = medicalRecord.getId();
-            //ps.setInt(1, id);
+            //FIRST_NAME, LAST_NAME, BIRTHDATE
             ps.setString(1, medicalRecord.getFirstName());
             ps.setString(2, medicalRecord.getLastName());
             ps.setString(3, medicalRecord.getBirthDate());
             ps.execute();
             
             int id = getId(medicalRecord);
-            //System.out.println("ID:" + id);
             
             for(String medication : medicalRecord.getMedications()) {
             	saveMedication(medication, id);            	
@@ -49,7 +45,7 @@ public class MedicalRecordRepository implements IMedicalRecordRepository {
             }
             return medicalRecord;
         }catch (Exception ex){
-            logger.error("Error saving new person",ex);
+            logger.error("Error saving new medical record",ex);
         }finally {
             dataBaseConfig.closeConnection(con);
             dataBaseConfig.closePreparedStatement(ps);            
@@ -59,37 +55,32 @@ public class MedicalRecordRepository implements IMedicalRecordRepository {
 	
 	public MedicalRecord updateMedicalRecord(MedicalRecord medicalRecord) {
 		int id = getId(medicalRecord);
-		System.out.println("ID:" + id);
-		System.out.println("medical record:" + medicalRecord);
 		Connection con = null;
         PreparedStatement ps = null;
         try {
         	
             con = dataBaseConfig.getConnection();
             ps = con.prepareStatement(DBConstants.UPDATE_MEDICALRECORD);
-            //BIRTHDATE
+            //BIRTHDATE, ID
             ps.setString(1, medicalRecord.getBirthDate());
             ps.setInt(2, id);
             
             deleteMedications(id);
-            
-            //System.out.println("MEDICATIONS DELETED");
             	
             for(String medication : medicalRecord.getMedications()) {
                 saveMedication(medication, id);            	
             }
-            //System.out.println("MEDICATIONS UPDATED");
+
             deleteAllergies(id);
-            //System.out.println("ALLERGIES DELETED");
+
             for(String allergie : medicalRecord.getAllergies()) {
-                saveAllergie(allergie, id);            	
-                
+                saveAllergie(allergie, id);            	              
             }
             
             ps.execute();
             return medicalRecord;
         }catch (Exception ex){
-            logger.error("Error updating medicalRecord",ex);
+            logger.error("Error updating medical record",ex);
         }finally {
             dataBaseConfig.closeConnection(con);
             dataBaseConfig.closePreparedStatement(ps);            
@@ -99,16 +90,14 @@ public class MedicalRecordRepository implements IMedicalRecordRepository {
 	
 	public MedicalRecord deleteMedicalRecord(String firstName, String lastName) {
 		int id = getId(firstName, lastName);
-		//System.out.println("ID:" + id);
 		MedicalRecord medicalRecord = findById(id);
-		//System.out.println("MEDICAL RECORD: " + medicalRecord);
 		Connection con = null;
         PreparedStatement ps = null;
         try {
         	
             con = dataBaseConfig.getConnection();
             ps = con.prepareStatement(DBConstants.DELETE_MEDICALRECORD);
-            //BIRTHDATE
+            //FIRSTNAME, LASTNAME
             ps.setString(1, firstName);
             ps.setString(2, lastName);
             
@@ -146,7 +135,6 @@ public class MedicalRecordRepository implements IMedicalRecordRepository {
 	}
 	
 	public boolean deleteMedications(int medicalRecordId) {
-		//System.out.println("deleting medications");
 		Connection con = null;
 	    PreparedStatement ps = null;
 	    try {
@@ -154,8 +142,7 @@ public class MedicalRecordRepository implements IMedicalRecordRepository {
 	        ps = con.prepareStatement(DBConstants.DELETE_MEDICATIONS);
 	        //MEDICALRECORDID
 	        ps.setInt(1, medicalRecordId);
-	        //System.out.println(medicalRecordId);
-	        //TODO REGARDER POURQUOI RETOURNE FALSE
+
 	        return ps.execute();
 	    }catch (Exception ex){
 	        logger.error("Error deleting medications",ex);
@@ -192,7 +179,7 @@ public class MedicalRecordRepository implements IMedicalRecordRepository {
 	    try {
 	        con = dataBaseConfig.getConnection();
 	        ps = con.prepareStatement(DBConstants.DELETE_ALLERGIES);
-	        //ALLERGIE, MEDICALRECORDID
+	        //MEDICALRECORDID
 	        ps.setInt(1, medicalRecordId);
 	        
 	        return ps.execute();
@@ -221,7 +208,7 @@ public class MedicalRecordRepository implements IMedicalRecordRepository {
             }
             
         }catch (Exception ex){
-            logger.error("Error getting medicalRecord id",ex);
+            logger.error("Error getting medical record id",ex);
         }finally {
             dataBaseConfig.closeConnection(con);
             dataBaseConfig.closeResultSet(rs);
@@ -247,7 +234,7 @@ public class MedicalRecordRepository implements IMedicalRecordRepository {
             }
             
         }catch (Exception ex){
-            logger.error("Error getting medicalRecord id",ex);
+            logger.error("Error getting medical record id",ex);
         }finally {
             dataBaseConfig.closeConnection(con);
             dataBaseConfig.closeResultSet(rs);
@@ -276,7 +263,7 @@ public class MedicalRecordRepository implements IMedicalRecordRepository {
             }
             
         }catch (Exception ex){
-            logger.error("Error getting person id",ex);
+            logger.error("Error getting medical record",ex);
         }finally {
             dataBaseConfig.closeConnection(con);
             dataBaseConfig.closeResultSet(rs);

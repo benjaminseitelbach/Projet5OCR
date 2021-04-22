@@ -3,7 +3,6 @@ package com.safetynet.safetynetalerts.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -13,11 +12,8 @@ import org.json.JSONObject;
 
 import org.springframework.stereotype.Repository;
 
-import com.safetynet.safetynetalerts.model.Person;
 import com.safetynet.safetynetalerts.config.DataBaseConfig;
 import com.safetynet.safetynetalerts.constants.DBConstants;
-import com.safetynet.safetynetalerts.model.Firestation;
-import com.safetynet.safetynetalerts.model.MedicalRecord;
 import com.safetynet.safetynetalerts.utils.DatesUtils;
 
 @Repository
@@ -54,7 +50,6 @@ public class URLsRepository implements IURLsRepository {
 				} else {
 					childs++;
 				}
-				// TODO FAIRE LE RESTE
 				jsonArrayPersons.put(jsonObject);
 			}
 
@@ -237,7 +232,6 @@ public class URLsRepository implements IURLsRepository {
 
 	}
 
-	// TODO CAS SOPHIA ZEMICKS 
 	public String getFloodStations(List<Integer> stations) {
 		JSONObject result = new JSONObject();
 		JSONArray resultArray = new JSONArray();
@@ -370,7 +364,6 @@ public class URLsRepository implements IURLsRepository {
 								persons.put(jsonObject);
 								
 							} else {
-								//addressJson.put("address", address);
 								
 								nextAddress = true;
 								rs.previous();
@@ -387,11 +380,6 @@ public class URLsRepository implements IURLsRepository {
 							addressJson.put("persons", persons);
 							resultArray.put(addressJson);
 						}
-						/*
-						addressJson.put("address", address);
-						addressJson.put("persons", persons);
-						resultArray.put(addressJson);
-						*/
 						
 					}
 					
@@ -406,8 +394,6 @@ public class URLsRepository implements IURLsRepository {
 				dataBaseConfig.closeResultSet(rs);
 				dataBaseConfig.closePreparedStatement(ps);
 			}
-			
-			// result.put("persons", resultArray);
 			
 		}
 		result.put("addresses", resultArray);

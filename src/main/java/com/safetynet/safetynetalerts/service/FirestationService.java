@@ -1,13 +1,7 @@
 package com.safetynet.safetynetalerts.service;
 
-import java.net.URI;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.safetynet.safetynetalerts.dao.IFirestationRepository;
 import com.safetynet.safetynetalerts.exception.MissingEntityException;
@@ -15,8 +9,6 @@ import com.safetynet.safetynetalerts.model.Firestation;
 
 @Service
 public class FirestationService {
-	
-	private static final Logger logger = LogManager.getLogger("FirestationService");
 	
 	@Autowired
 	private IFirestationRepository iFirestationRepository;

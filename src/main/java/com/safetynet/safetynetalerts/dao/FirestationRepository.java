@@ -11,8 +11,6 @@ import org.springframework.stereotype.Repository;
 import com.safetynet.safetynetalerts.config.DataBaseConfig;
 import com.safetynet.safetynetalerts.constants.DBConstants;
 import com.safetynet.safetynetalerts.model.Firestation;
-import com.safetynet.safetynetalerts.model.MedicalRecord;
-import com.safetynet.safetynetalerts.model.Person;
 
 @Repository
 public class FirestationRepository implements IFirestationRepository {
